@@ -66,10 +66,10 @@
 %----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.46\textwidth}
-    \cvsect{Summary}
-	\vspace{-6pt}
-	
-	Undergraduate CS and Math double major interested in quantum algorithms, high performance computing, molecular dynamics simulations, Monte Carlo methods and other optimization techniques\\
+\cvsect{Summary}
+\vspace{-6pt}
+
+Undergraduate computer science major with research interests in molecular dynamics, Monte Carlo methods, quantum optimization algorithms, quantum error correction, and machine learning.\\
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
@@ -81,7 +81,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-      Python, \LaTeX, JavaScript, C++  
+      Python, C, C++, \LaTeX
     \end{minipage}
     \vspace{4mm}
     
@@ -90,10 +90,10 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-      Qiskit, NumPy, PyTorch, MatPlotLib
+    	NumPy, PyTorch, MatPlotLib, Qiskit
     \end{minipage}
 	\vspace{4mm}
-	
+
 	\begin{minipage}[t]{0.2\textwidth}
         \textbf{Softwares:}
     \end{minipage}
@@ -102,8 +102,6 @@
     LAMMPS, OVITO, NAMD, VMD
     \end{minipage}
     \vspace{1mm}
-    
-    
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
@@ -123,25 +121,30 @@
 		{Michigan State University}
 		{Expected Graduation: 2027 \\ 
 		Current GPA: 4.0}
-
-
 \end{entrylist}
-\cvsect{CONFERENCES}
-\begin{entrylist}
-	\entry
-		{2020 \\ \vspace{4pt}\color{gray} \textit{IISc, Bengaluru}}
-		{12th Biennial Lake Conference}
-		{}
-		{Presented a case study on the destruction and conservation efforts of Sarakki Lake\\ 
-		Secured 3rd place and awarded Sahyadri Young Ecologist of the Year}
-\end{entrylist}
+% \cvsect{CONFERENCES}
+% \begin{entrylist}
+% 	\entry 
+% 		{2025 \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
+% 		{First Great Lakes Plant Science Conference}
+% 		{}
+% 		{Evaluating the Interaction of Chloroplast-targeting Protein (At4g16060) with
+% 		Thylakoid Membrane}
+% \end{entrylist}
+
 \cvsect{EXPERIENCE}
 \begin{entrylist}
 	\entry 
-		{2024- \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
-		{Vermaas Lab}
-		{}
-		{Explored thylakoid membrane protein interactions employing molecular dynamics simulations using NAMD and VMD.}
+		{2024--}
+		{Undergraduate Research Assistant}
+		{Vermaas Lab, Plant Research Laboratory}
+		{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+			\item Investigated the interaction of the chloroplast targeting protein (At4g16060) with thylakoid membranes using molecular dynamics.
+			\item Analyzed the effect of PDLP-5 (Plasmodesmata Located Protein) on water flow rates through PIP1;4 aquaporin tetramer using grid-steered molecular dynamics. Calculated protein transition kinetics using Markov State Models (MSMs) and transition path theory.
+			 
+		\end{itemize}
+		}
 \end{entrylist}
 %----------------------------------------------------------------------------------------
 %	Projects
@@ -149,20 +152,50 @@
 \cvsect{Projects}
 \begin{entrylist}
 	\entry
+		{Python \\ NumPy}
+		{aqua-blue}
+		{\href{https://github.com/jwjeffr/aqua-blue}{github.com}/\href{https://pypi.org/project/aqua-blue/}{pypi.org}}
+		{Secondary maintainer of aqua-blue, a package building echo state networks.
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+		\item Implemented reservoir state time-lag, sparsity and spectral radius to improve prediction accuracy.
+		\item Introduced timezone-aware datetime support for seamless interfacing with data pipelines.
+		\item Demonstrated prediction capability by predicting quantum time evolution of Gaussian wave packets. 
+		\end{itemize}
+		}
+	% \entry
+	% 	{Python \\ NumPy \\ hyperopt}
+	% 	{aqua-blue-hyperopt}
+	% 	{\href{https://github.com/lonelyneutrin0/aqua-blue-hyperopt}{github.com}/\href{https://pypi.org/project/aqua-blue-hyperopt/}{pypi.org}}
+	% 	{Primary maintainer of aqua-blue-hyperopt, a package implementing hyperparameter optimization functionality for aqua-blue models.}
+	\entry
+		{Python \\ NumPy}
+		{neurop}
+		{\href{https://github.com/lonelyneutrin0/neurop/}{github.com}/\href{https://pypi.org/project/neurop/}{pypi.org}}
+		{Primary maintainer of neurop, a package implementing neural operators.}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+		\item Developed Fourier Neural Operator (FNO) and DeepONet architectures for solving PDEs.
+		\item Implemented the Fractional Fourier Transform for use in Complex Neural Operators (CoNO).
+		\end{itemize}
+	% \entry
+	% 	{Python \\ NumPy}
+	% 	{Majorana Zero Mode Simulations in Kitaev Chains}
+	% 	{\href{https://github.com/lonelyneutrin0/topoqubit}{github.com}}
+	% 	{Simulated Majorana Zero Modes in 1-D topological superconductors using BdG Hamiltonian formalism}
+	\entry
 		{Python \\ Qiskit}
 		{Discretized Quantum Adiabatic Evolution}
-		{github.com (private)}
+		{\href{https://github.com/lonelyneutrin0/Adiabatic-Quantum-Computation}{github.com}}
 		{Implemented a quantum adiabatic algorithm to solve QUBO type problems using the Trotter-Suzuki approximation and quantum Ising model formulation techniques}
 	\entry 
 		{Python \\ Qiskit}
 		{Quantum Arithmetic Circuits}
-		{\href{https://github.com/lonelyneutrin0/qarith}{github.com}}	
-		{Implemented quantum ALUs (Arithmetic Logic Units) for elementary operations augmented by an approximate Quantum Fourier Transform (AQFT) to improve accuracy in the presence of decoherence.}	
+		{\href{https://github.com/lonelyneutrin0/Quantum-Arithmetic-Circuits}{github.com}}	
+		{Built quantum circuits to perform addition, subtraction and multiplication using the Quantum Fourier Transform.}	
 	\entry
 		{Python \\ OVITO \\ pyMOL }
 		{Genetic Annealing to Determine Protein Structures}
 		{\href{https://github.com/lonelyneutrin0/Protein-Structure-Prediction}{github.com}}
-		{Hybrid genetic annealing algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD < 3.0). Use of molecular dynamics to simulate protein folding.}	
+		{Monte Carlo Genetic Algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD < 3.0).}	
 	\entry
 		{Python}
 		{Quadratic Unconstrained Binary Optimization}
@@ -173,25 +206,5 @@
 		{Monte Carlo Integration}
 		{\href{https://github.com/lonelyneutrin0/MNI}{github.com}}
 		{Monte Carlo integration with importance sampling to numerically evaluate complex integrals.}
-	
-	\entry
-		{Python}
-		{Langevin Monte Carlo}
-		{\href{https://github.com/lonelyneutrin0/LMC}{github.com}}
-		{Metropolis-adjusted Langevin algorithm for sampling from intractable probability distributions.}
-	
-	\entry
-		{Python}
-		{Lattice Grid Optimization}
-		{\href{https://github.com/lonelyneutrin0/lattice_grid}{github.com}}
-		{Designed and implemented a simulated annealing algorithm to visualize how cooling schedules affect clustering in a two-color lattice grid.}
-	
-	\entry
-	{Python \\ RESTful API}
-	{AP Survey Automation and Analysis}
-	{\href{https://github.com/lonelyneutrin0/APSurveyAutomation}{github.com}}
-	{Created a Google Forms API script to generate over 30 AP exam surveys, collecting 1,000+ responses.\\Led a team to analyze survey data, identifying popular resources for 50,000+ AP students.}
-	\end{entrylist}
-	
-
+\end{entrylist}
 \end{document}
