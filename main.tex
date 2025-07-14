@@ -69,7 +69,7 @@
 \cvsect{Summary}
 \vspace{-6pt}
 
-Undergraduate computer science major with research interests in molecular dynamics, Monte Carlo methods, quantum optimization algorithms, quantum error correction, and machine learning.\\
+Undergraduate computer science major with research interests in reservoir computing, reinforcement learning, molecular dynamics, high performance computing, and quantum algorithms.\\
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
@@ -90,7 +90,7 @@ Undergraduate computer science major with research interests in molecular dynami
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-    	NumPy, PyTorch, MatPlotLib, Qiskit
+    	NumPy, PyTorch, scipy, Qiskit, PyEMMA, hyperopt, VMD-Python
     \end{minipage}
 	\vspace{4mm}
 
@@ -118,20 +118,11 @@ Undergraduate computer science major with research interests in molecular dynami
     \entry
 		{\hspace{10pt}}
 		{Computer Science (B.S)}
-		{Michigan State University}
+		{Michigan State University Honors College}
 		{Expected Graduation: 2027 \\ 
 		Current GPA: 4.0}
 \end{entrylist}
-% \cvsect{CONFERENCES}
-% \begin{entrylist}
-% 	\entry 
-% 		{2025 \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
-% 		{First Great Lakes Plant Science Conference}
-% 		{}
-% 		{Evaluating the Interaction of Chloroplast-targeting Protein (At4g16060) with
-% 		Thylakoid Membrane}
-% \end{entrylist}
-
+\vspace{-10pt}
 \cvsect{EXPERIENCE}
 \begin{entrylist}
 	\entry 
@@ -141,8 +132,8 @@ Undergraduate computer science major with research interests in molecular dynami
 		{\vspace{-10pt}
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Investigated the interaction of the chloroplast targeting protein (At4g16060) with thylakoid membranes using molecular dynamics.
-			\item Analyzed the effect of PDLP-5 (Plasmodesmata Located Protein) on water flow rates through PIP1;4 aquaporin tetramer using grid-steered molecular dynamics. Calculated protein transition kinetics using Markov State Models (MSMs) and transition path theory.
-			 
+			\item Analyzed the effect of PDLP-5 (Plasmodesmata Located Protein) on water flow rates through PIP1;4 aquaporin tetramer using grid-steered molecular dynamics.
+			\item Calculated protein transition kinetics using Markov State Models (MSMs) and transition path theory.
 		\end{itemize}
 		}
 \end{entrylist}
@@ -162,20 +153,27 @@ Undergraduate computer science major with research interests in molecular dynami
 		\item Demonstrated prediction capability by predicting quantum time evolution of Gaussian wave packets. 
 		\end{itemize}
 		}
-	% \entry
-	% 	{Python \\ NumPy \\ hyperopt}
-	% 	{aqua-blue-hyperopt}
-	% 	{\href{https://github.com/lonelyneutrin0/aqua-blue-hyperopt}{github.com}/\href{https://pypi.org/project/aqua-blue-hyperopt/}{pypi.org}}
-	% 	{Primary maintainer of aqua-blue-hyperopt, a package implementing hyperparameter optimization functionality for aqua-blue models.}
 	\entry
-		{Python \\ NumPy}
+		{Python \\ NumPy \\ hyperopt}
+		{aqua-blue-hyperopt}
+		{\href{https://github.com/lonelyneutrin0/aqua-blue-hyperopt}{github.com}/\href{https://pypi.org/project/aqua-blue-hyperopt/}{pypi.org}}
+		{Primary maintainer of aqua-blue-hyperopt, a package implementing hyperparameter optimization functionality for aqua-blue models.
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+		\item Created modular hyperparameter optimization functionality for aqua-blue reservoir computers.
+		\item Implemented custom loss function capabilities for flexible model evaluation.
+        \end{itemize}
+		}
+	\entry
+		{Python \\ PyTorch \\ pytest}
 		{neurop}
 		{\href{https://github.com/lonelyneutrin0/neurop/}{github.com}/\href{https://pypi.org/project/neurop/}{pypi.org}}
-		{Primary maintainer of neurop, a package implementing neural operators.}
+		{Primary maintainer of neurop, a package implementing neural operators.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 		\item Developed Fourier Neural Operator (FNO) and DeepONet architectures for solving PDEs.
 		\item Implemented the Fractional Fourier Transform for use in Complex Neural Operators (CoNO).
+		\item Built CI/CD pipeline with GitHub Actions for automated testing and deployment.
 		\end{itemize}
+		}
 	% \entry
 	% 	{Python \\ NumPy}
 	% 	{Majorana Zero Mode Simulations in Kitaev Chains}
@@ -202,9 +200,36 @@ Undergraduate computer science major with research interests in molecular dynami
 		{\href{https://github.com/lonelyneutrin0/qubo}{github.com}}
 		{Stochastic tunneling-enhanced simulated annealing for solving QUBO-type problems.}
 	\entry
-		{Python}
+		{Python \\ NumPy}
 		{Monte Carlo Integration}
 		{\href{https://github.com/lonelyneutrin0/MNI}{github.com}}
 		{Monte Carlo integration with importance sampling to numerically evaluate complex integrals.}
+	\entry
+		{Python \\ NumPy}
+		{Langevin Monte Carlo}
+		{\href{https://github.com/lonelyneutrin0/LMC}{github.com}}
+		{Metropolis-adjusted Langevin algorithm for sampling from intractable probability distributions.}
 \end{entrylist}
+\newpage
+\cvsect{CONFERENCES}
+\begin{entrylist}
+	\entry 
+		{2025 \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
+		{Aquaporin Water Transit Modulation via Protein Capping}
+		{\href{https://acs.digitellinc.com/p/s/aquaporin-water-transit-modulation-via-protein-capping-638984}{acs.digitellinc.com}}
+		{Submitted abstract to ACS Fall 2025 Conference}
+	\entry 
+		{2025 \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
+		{Evaluating the Interaction of Chloroplast-targeting Protein (At4g16060) with
+		Thylakoid Membrane}
+		{}
+		{Submitted abstract to First Great Lakes Plant Science Conference}
+\end{entrylist}
+\cvsect{HONORS AND AWARDS}
+\vspace{-10pt}
+\begin{itemize}
+	\item Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering (2024)
+	\item MSU President's Scholarship (2024)
+	\item Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering (2024)
+\end{itemize}
 \end{document}
