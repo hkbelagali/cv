@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Hrishikesh Belagali}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Undergraduate Student} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    % \icon{Phone}{11}{11 1111 1111}\\
+    \icon{MapMarker}{11}{East Lansing}\\
+	\icon{Envelope}{11}{\href{mailto:belagal1@msu.edu}{belagal1@.msu.edu}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    \icon{Github}{11}{\href{https://github.com/lonelyneutrin0}{github.com/lonelyneutrin0}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/hkbel}{/in/hkbel}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+\cvsect{Summary}
+\vspace{-6pt}
+
+Undergraduate computer science major with research interests in quantum algorithms, molecular dynamics, reservoir computing, quantum dynamics, and high performance computing.\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+\\\begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python, C, C++, \LaTeX
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Packages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+    NumPy, PyTorch, scipy, Qiskit, Cirq, PyEMMA, hyperopt, VMD-Python
+    \end{minipage}
+	\vspace{4mm}
+
+	\begin{minipage}[t]{0.2\textwidth}
+        \textbf{Softwares:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+    LAMMPS, OVITO, NAMD, VMD
+    \end{minipage}
+    \vspace{1mm}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{\hspace{10pt}}
+		{Computer Science (B.S)}
+		{Michigan State University Honors College}
+		{Expected Graduation: 2027 \\ 
+		Current GPA: 4.0}
+\end{entrylist}
+\vspace{-10pt}
+\cvsect{EXPERIENCE}
+\begin{entrylist}
+	\entry
+	{2025--}
+	{Honors Research Scholar}
+	{MSU Honors College/MSU-Q}
+	{\vspace{-10pt}
+	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+	\item Conducted research on generalized quantum simulators under the guidance of Professor Ryan LaRose.
+	\item Investigated computational group theory methods for subgroup membership in unitary subgroups.
+	\item Implemented compilation optimization for generalized subgroups using Python and Cirq.
+	\end{itemize}
+	}
+	\entry 
+		{2024--}
+		{Undergraduate Research Assistant}
+		{Vermaas Lab, Plant Research Laboratory}
+		{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+			\item Investigated the interaction of the chloroplast targeting protein (At4g16060) with thylakoid membranes using molecular dynamics.
+			\item Analyzed the effect of PDLP-5 (Plasmodesmata Located Protein) on water flow rates through PIP1;4 aquaporin tetramer using grid-steered molecular dynamics.
+			\item Simulated the effects of small molecules like butanol on \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis} membrane dynamics. 
+		\end{itemize}
+		}
+\end{entrylist}
+\cvsect{COURSEWORK}
+\vspace{-8pt}
+\begin{itemize}
+	\item Advanced Linear Algebra
+	\item Data Structures and Algorithms, Programming in C++, Computer Architecture 
+	\item Mechanics, Electricity and Magnetism, Thermodynamics and Modern Physics, Classical Mechanics
+	\item Graduate Quantum Algorithms (Scheduled)
+	\item Graduate Computational Foundations of Artificial Intelligence (Scheduled)
+\end{itemize}
+\cvsect{CONFERENCES}
+\begin{entrylist}
+	\entry 
+		{2025 \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
+		{Aquaporin Water Transit Modulation via Protein Capping}
+		{\href{https://acs.digitellinc.com/p/s/aquaporin-water-transit-modulation-via-protein-capping-638984}{acs.digitellinc.com}}
+		{Abstract presented at ACS Fall 2025 Conference (contributed)}
+	\entry 
+		{2025 \\ \vspace{4pt}\color{gray} \textit{PRL, MSU}}
+		{Evaluating the Interaction of Chloroplast-targeting Protein (At4g16060) with
+		Thylakoid Membrane}
+		{}
+		{Abstract presented at First Great Lakes Plant Science Conference (contributed)}
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+	\entry
+		{Python \\ Qiskit}
+		{Discretized Quantum Adiabatic Evolution}
+		{\href{https://github.com/lonelyneutrin0/Adiabatic-Quantum-Computation}{github.com}}
+		{Implemented a quantum adiabatic algorithm to solve QUBO type problems using the Trotter-Suzuki approximation and quantum Ising model formulation techniques}
+	\entry 
+		{Python \\ Qiskit}
+		{Quantum Arithmetic Circuits}
+		{\href{https://github.com/lonelyneutrin0/Quantum-Arithmetic-Circuits}{github.com}}	
+		{Built quantum circuits to perform addition, subtraction and multiplication using the Quantum Fourier Transform.}	
+	
+	\entry
+		{Python \\ NumPy}
+		{Monte Carlo Integration}
+		{\href{https://github.com/lonelyneutrin0/MNI}{github.com}}
+		{Monte Carlo integration with importance sampling to numerically evaluate complex integrals.}
+	\entry
+		{Python \\ NumPy}
+		{Langevin Monte Carlo}
+		{\href{https://github.com/lonelyneutrin0/Metropolis-Langevin-Algorithm}{github.com}}
+		{Metropolis-adjusted Langevin algorithm for sampling from intractable probability distributions.}
+	\entry
+		{Python \\ OVITO \\ pyMOL }
+		{Genetic Annealing to Determine Protein Structures}
+		{\href{https://github.com/lonelyneutrin0/Protein-Structure-Prediction}{github.com}}
+		{Monte Carlo Genetic Algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD < 3.0).}	
+	% \entry
+	% 	{Python \\ NumPy}
+	% 	{foldopt}
+	% 	{\href{https://github.com/lonelyneutrin0/foldopt}{github.com}}
+	% 	{Python package for model-agnostic protein structure optimization.}
+	\entry
+		{Python}
+		{Quadratic Unconstrained Binary Optimization}
+		{\href{https://github.com/lonelyneutrin0/qubo}{github.com}}
+		{Stochastic tunneling-enhanced simulated annealing for solving QUBO-type problems.}
+	\entry
+		{Python \\ NumPy}
+		{aqua-blue}
+		{\href{https://github.com/jwjeffr/aqua-blue}{github.com}/\href{https://pypi.org/project/aqua-blue/}{pypi.org}}
+		{Secondary maintainer of aqua-blue, a package building echo state networks.
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+		\item Implemented reservoir state time-lag, sparsity and spectral radius to improve prediction accuracy.
+		\item Introduced timezone-aware datetime support for seamless interfacing with data pipelines.
+		\item Demonstrated prediction capability by predicting quantum time evolution of Gaussian wave packets. 
+		\end{itemize}
+		}
+	\entry
+		{Python \\ NumPy \\ hyperopt}
+		{aqua-blue-hyperopt}
+		{\href{https://github.com/lonelyneutrin0/aqua-blue-hyperopt}{github.com}/\href{https://pypi.org/project/aqua-blue-hyperopt/}{pypi.org}}
+		{Primary maintainer of aqua-blue-hyperopt, a package implementing hyperparameter optimization functionality for aqua-blue models.
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+		\item Created modular hyperparameter optimization functionality for aqua-blue reservoir computers.
+		\item Implemented custom loss function capabilities for flexible model evaluation.
+        \end{itemize}
+		}
+	% \entry
+	% 	{Python \\ PyTorch \\ pytest}
+	% 	{neurop}
+	% 	{\href{https://github.com/lonelyneutrin0/neurop/}{github.com}/\href{https://pypi.org/project/neurop/}{pypi.org}}
+	% 	{Primary maintainer of neurop, a package implementing neural operators.
+	% 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+	% 	\item Developed Fourier Neural Operator (FNO) architecture for solving PDEs.
+	% 	\item Implemented the Fractional Fourier Transform for use in Complex Neural Operators (CoNO).
+	% 	\item Built CI/CD pipeline with GitHub Actions for automated testing and deployment.
+	% 	\end{itemize}
+	% 	}
+\end{entrylist}
+\cvsect{Open Source Contributions}
+\begin{entrylist}
+	\entry
+		{QuTiP \\ Python}
+		{Quantum Toolbox in Python (QuTiP)}
+		{\href{https://github.com/qutip/qutip}{github.com}}
+		{Contributed to QuTiP, an open-source software for simulating quantum systems.
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
+		\item Implemented functionality to return eigenkets as an operator in the Qobj class.
+		\end{itemize}
+		}
+\end{entrylist}
+\cvsect{HONORS AND AWARDS}
+\vspace{-10pt}
+\begin{itemize}
+	\item Wielenga Research Scholarship, Honors College (2025-2026)
+	\item Dean's List (Fall 2024, Spring 2025, Fall 2025)
+	\item Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering (2024)
+	\item MSU President's Scholarship (2024)
+\end{itemize}
+\end{document}
