@@ -1,0 +1,275 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Hrishikesh Belagali} \\ \vspace{1pt}
+    \vspace{1pt}
+    \small \raisebox{-0.1\height}{E. Lansing, MI }
+    \small \raisebox{-0.1\height}\faPhone\ 269-823-2963 ~ \href{belagal1@msu.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{belagal1@msu.edu}} ~ 
+    \href{https://linkedin.com/in/hkbel}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hkbel}}  ~
+    \href{https://github.com/lonelyneutrin0}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/lonelyneutrin0}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Objective}
+Driven Computer Science student with () experience seeking ()    opportunity 
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Michigan State University}{Expected Graduation: May 2028}
+      {}{4.0 GPA}
+      \vspace*{-1pt}
+    \textit{Bachelor of Science in Computer Science \\
+    Bachelor of Science in Advanced Mathematics}
+  \resumeSubHeadingListEnd
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Electronics Company}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Startup, Inc}{May 2019 -- August 2019}
+%       {Front End Developer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+%         \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+%         \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+%         \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+%     \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+         \resumeProjectHeading
+          {\textbf{Protein Structure Prediction} $|$ \emph{Python, MatPlotLib, NumPy, pyMOL, OVITO}}{}
+          \resumeItemListStart
+            \resumeItem{Proposed a genetic annealing algorithm to optimize Irbäck's off-lattice model}
+            \resumeItem{Generated real protein models with RMSD less than 3.}
+            \resumeItem{Accurately modelled protein folding through molecular dynamics}
+          \resumeItemListEnd
+          \vspace{-13pt }
+      \resumeProjectHeading
+      {\textbf{Quadratic Unconstrained Binary Optimization Problems} $|$ \emph{Python, MatPlotLib, NumPy}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a simulated annealing algorithm using Object-Oriented Programming to determine the global minimum of QUBO problems}
+        \resumeItem{Improved convergence through the implementation of dynamic stochastic tunneling.}
+      
+      \resumeItemListEnd
+      \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{IUPAC Name and Chemistry Retrosynthesis Generator} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Created a database of reactions and functional groups}
+            \resumeItem{Developed code to produce
+            organic compound names in accordance with IUPAC nomenclature}
+            \resumeItem{Built an algorithm for practice synthesis problems using IUPAC which closely resemble problems given in school exams}
+            \resumeItem{Generated problems used by fellow classmates and underclassmen}
+           
+            
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{FiveHive Survey Script} $|$ \emph{Python, Google Forms REST API}}{}
+          \resumeItemListStart
+            \resumeItem{Created a script with Google Forms' RESTful API to generate surveys for each of the Advanced Placement exams}
+            \resumeItem{Surveys received over 1000 responses combined}
+            \resumeItem{Added scripts to dynamically update questions for $>$30 surveys generated}
+            \resumeItem{Co-led a team to analyze survey data and gain input on popular resources for over 50,000 AP students}
+            
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, C++} \\
+     \textbf{Developer Tools}{: VS Code, Linux WSL, SLURM} \\
+     \textbf{Technologies/Frameworks}{: Git, GitHub} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{12th Biennial Lake Conference}{December 2020}{Research}{Indian Institute of Science, Bengaluru}
+            \resumeItemListStart
+                \resumeItem{Carried out research on the Sarakki lake, analyzing 20 years of satellite data and tracking its pollution and eventual restoration}
+                \resumeItem{Visited the lake to collect macrophytes and photos of local flora and fauna}
+                \resumeItem{Review of conservation methods and proposal of a novel method to remove excess inorganic phosphates from lakes}
+                \resumeItem{Presented findings at IISc, won third place at the conference} 
+            \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+    \section{Awards}
+    
+     \resumeItemListStart
+        \resumeItem{Sahyadri Young Ecologist of the Year, IISc }  
+        \resumeItem{CBSE Class First in my Math Class 98\%,  AECS MMPS}
+        \resumeItem{Best in Scientific Temper- Kumarans}
+        \resumeItem{CBSE Class 12 1st in my math class- 99\%, Kumarans}
+    \resumeItemListEnd
+
+
+\end{document}
