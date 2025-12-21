@@ -21,7 +21,7 @@
 \newcommand{\statement}[1]{\par\medskip
   \underline{\textcolor{blue}{\textbf{#1:}}}\space
 }
-
+\vspace*{-20pt}
 \usepackage[
   colorlinks,
   breaklinks,
@@ -29,7 +29,7 @@
   pdfauthor={\yourname},
   unicode
 ]{hyperref}
-
+\parindent=0pt
 \begin{document}
 
 \begin{center}\LARGE\soptitle\\
@@ -82,50 +82,52 @@
 % in developing novel quantum algorithms for simulation and optimization, which has significant applications in materials science and 
 % pharmaceuticals.
 % \newpage
-My research interests are driven by a single question: how can we model complex physical systems effectively? 
-The pursuit of this question has guided me across multiple computational frameworks, including molecular simulation, 
+My research interests are centered around a single question: how can we model complex physical systems effectively? 
+I always thought science was about understanding the natural world through observation and experimentation. 
+My research experience has revealed that computation is an equally powerful tool, which can provide unique insights inaccessible to traditional experiments.
+My interest in answering this question has guided me across multiple computational frameworks, including molecular simulation, 
 quantum algorithms, and machine learning techniques. By participating in the Science Undergraduate Laboratory Internship, I aim to deepen my understanding of 
-quantum simulation and optimization methods by learning from experts in the field. This program aligns with my long-term goal of pursuing graduate studies in quantum algorithms 
-and contributing to the development of novel computational methods for simulating complex systems, with applications in 
-materials science and drug discovery.
+quantum simulation and optimization methods by learning from experts in the field. This program will help me explore the field of 
+quantum algorithms for molecular simulation and understand how such methods can address computational bottlenecks, 
+which will be invaluable as I consider PhD programs in quantum computing.
 \\
 
 As an undergraduate research assistant in the Vermaas Lab, I work on molecular dynamics simulations of biomolecular systems 
-using VMD and NAMD. My tasks include setting up simulation systems, running simulations on high-performance computing clusters using SLURM, 
-and analyzing the results using Tcl and Python scripts. I study the effect of small molecules such as butanol and isobutanol on 
-bacterial membrane fluidity and stability. These simulations explain why such molecules disturb membranes and provide 
-potential solutions to engineer more robust membranes, insights that are essential for industrial-scale biofuel 
-production and difficult to obtain experimentally. This experience has shown me the power of computational approaches in understanding 
-complex mechanisms at the molecular level.
+using VMD and NAMD. Over the past year, I have been working on characterizing water transport mechanisms in aquaporin channels in plants, which are vital for maintaining cellular water balance 
+under drought stress. Understanding this mechanism is essential for bioengineering efforts to improve plant drought 
+tolerance. During this study, I faced challenges quantifying the transport mechanism because of the large system size, 
+which restricted the simulation length and sampling. I explored alternative methods 
+for simulation such as grid-steered molecular dynamics, which taught me to consider computational constraints while studying 
+complicated systems.
 \\
 
-At the same time, my experience highlighted the limitations of classical simulation. Simulating larger systems, capturing statistically 
-rare events, and reaching biologically significant timescales are computationally expensive, which limits the scope of 
-phenomena we can study. Quantum computing combines my passion for physics with computer science, and offers an alternative 
-approach to modelling complex systems, potentially overcoming some of the challenges of classical methods. In order to explore my interest in 
-quantum algorithms, I work as an Honors Research Scholar under Professor Ryan LaRose with a focus on generalized quantum 
+My experience with the aquaporin project highlighted the limitations of classical simulation. Simulating larger systems, capturing statistically 
+rare events, and reaching biologically significant timescales is computationally expensive, which limits the scope of 
+phenomena we can study. These limitations led me to explore alternative computational approaches, of which quantum computing stood out to me 
+because it leverages principles of quantum mechanics to solve complex problems. In order to explore my interest in 
+quantum computing, I work as an Honors Research Scholar under Professor Ryan LaRose with a focus on generalized quantum 
 simulators. My research involves studying group-theoretic methods and compilation optimization techniques in Python and Cirq to develop
-methods for simulating quantum algorithms on classical computers, which is essential for benchmarking and refining larger-scale quantum algorithms.
+methods for simulating quantum algorithms on classical computers. The development of advanced quantum simulation techniques is useful 
+for benchmarking and refining larger-scale quantum algorithms, which might not be feasible to run on current quantum hardware. By 
+contributing to this research, I've learned to consider both theoretical performance and practical challenges of 
+implementing quantum algorithms.
 \\
 
 Alongside formal research, I have built several computational physics projects using Python, NumPy, Matplotlib, and Qiskit.
-I implemented a simulated annealing algorithm for minimizing Quadratic Unconstrained Binary Optimization (QUBO) problems, 
-using stochastic tunneling to escape local minima and enhance convergence to the global minimum. I was curious to see whether 
-quantum optimization algorithms would be able to achieve the same, so I formulated the same QUBO problems as Ising Hamiltonians and 
-solved them using adiabatic evolution on IBM's Aer simulator. I faced challenges in maintaining the adiabatic condition
-throughout the simulation, which I addressed by trying different evolution schedules and adjusting total evolution time. I 
-also had the opportunity to work on aqua-blue, an open-source machine learning package for predicting the time evolution of 
-dynamical systems. I contributed by implementing time-lag and benchmarking common dynamical systems such as the Lorenz and Mackey-Glass systems.
-These projects have helped me develop strong Python programming skills, gain experience with scientific computing packages, 
-and understand how to work with CI/CD workflows and version control software like Git and GitHub.
+In my first semester of college, I was exposed to Monte Carlo algorithms, and was amazed by how directed random search 
+could be used to solve a variety of difficult problems. I implemented a simulated annealing algorithm for 
+Quadratic Unconstrained Binary Optimization (QUBO) problems and later wrote a quantum optimization algorithm using adiabatic evolution in Qiskit. 
+Experimenting with different evolution schedules and total evolution times helped me understand the limitations of 
+current quantum simulators and improved my scientific programming skills. 
 \\
 
-My combined experience in molecular dynamics, quantum algorithms and computational physics has cultivated 
-my passion for contributing to research in methods for modelling physical mechanisms more efficiently. The SULI program at Oak Ridge National Laboratory 
-is an important step towards this goal. ORNL's focus on biophysics simulations, their quantum-HPC initiative and research on hybrid quantum-classical 
-algorithms closely align with my interests and are areas where my knowledge of molecular dynamics, scientific programming and quantum algorithms 
-are directly applicable. Additionally, my familiarity with high-performance computing environments such as MSU ICER's HPCC, NCSA Delta and NCSA DeltaAI will allow me to quickly adapt to ORNL's computing resources and effectively contribute to ongoing projects.
-ORNL's interdisciplinary research environment will allow me to learn how to conduct research at a national laboratory, 
-which will be beneficial for my career. I am eager to contribute my technical skills and passion for research to the program while expanding 
-my knowledge of modelling techniques, which will provide invaluable preparation for graduate school and a career in research.
+I am eager to further explore the intersection of molecular simulation and quantum algorithms through the SULI program at Oak Ridge 
+National Laboratory. ORNL's focus on biophysics and simulations, the Quantum Science Center's QHPC initiative and research on hybrid quantum-classical 
+algorithms closely align with my interests. I am particularly excited about the prospect of working under the guidance of 
+Dr. Ryan Bennink, whose research on quantum high performance computing is very intriguing.
+ORNL's interdisciplinary research environment will allow me to improve my scientific communication and collaboration skills,
+which will be beneficial for my career. I believe that my intersection of molecular dynamics and quantum algorithms research experience 
+will allow me to meaningfully contribute to ongoing projects at ORNL, and the skills that I gain through this program will prepare me for graduate school and a career in research.
+In the long term, I'm interested in working on methods that bridge molecular simulation and quantum algorithms to model materials 
+and biomolecular systems effectively.
 \end{document}
