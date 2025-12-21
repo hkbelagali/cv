@@ -1,0 +1,131 @@
+% Source: http://tex.stackexchange.com/a/150903/23931
+\documentclass{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola} % or any other font package you like
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  \yourname\quad
+  web: \textcolor{blue}{\itshape\yourweb}\quad
+  \textcolor{blue}{\youremail}}
+
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Hrishikesh Belagali}
+\newcommand{\youremail}{belagal1@msu.edu}
+\newcommand{\yourweb}{https://lonelyneutrin0.github.io/portfolio/}
+
+\newcommand{\statement}[1]{\par\medskip
+  \underline{\textcolor{blue}{\textbf{#1:}}}\space
+}
+
+\usepackage[
+  colorlinks,
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+\large of \yourname\
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+% \statement{Main Statement}
+% \textbf{I am driven by the challenge of modelling complex physical systems. I started doing this through molecular dynamics, where I learnt
+% about the power of computational modelling, as well as some of the limitations of classical resources. I then became interested in quantum algorithms
+% and the new possibilities they open up for modelling. Alongside formal research, I explored various computational modelling and optimization methods 
+% such as classical Monte Carlo methods, quantum optimization, and machine learning prediction for dynamical systems. I aim to 
+% go to graduate school in quantum algorithms and contribute to research in developing novel methods for simulation and optimization.} \\\\
+
+
+% \statement{Introduction}
+% \begin{itemize}
+%   \item Inrtoduce your fascination with modelling complex physical systems.
+%   \item Emphasize that this curiosity has driven your academic and research pursuits. 
+%   \item Set the state for classical $\to$ limitations $\to$ quantum.
+% \end{itemize}
+% \statement{Classical Simulation: Power and limits}
+% \begin{itemize}
+%   \item Early exposure to molecular dynamics simulations in NAMD and VMD
+%   \item Systems studied: Thylakoid membrane protein interactions, aquaporin capping mechanisms, small molecule effect on membrane dynamics and stability
+%   \item Work done: setting up systems, running on clusters, analyzing results 
+%   \item Taught about the power of computational modelling, and also limitations of classical resource (timescales, system size)
+% \end{itemize}
+% \statement{Why Quantum Algorithms}
+% \begin{itemize}
+%   \item Interest in quantum computing sparked by the limitations of classical simulations
+%   \item A different perspective on the same problem with novel insights 
+%   \item MSU-Q Honors Research Scholar program - generalized quantum simulators, compilation optimization, group-theoretic methods
+%   \item Mention programming tools (Python, Cirq)
+%   \item Mention QuTiP contribution - understanding how quantum systems are modelled in Python packages
+% \end{itemize}
+% \statement{Broader Computational Physics Projects}
+% \begin{itemize}
+%   \item Take Monte Carlo, Quantum Optimization, machine learning projects.
+%   \item Different ways of modelling and optimizing complex systems 
+%   \item Talk about the skills you gained here
+% \end{itemize}
+% \statement{Conclusion}
+% All experiences point towards modelling complex physical systems using various computational methods, out of which 
+% quantum algorithms is the most exciting and promising. I want to pursue graduate studies in this field, and contribute to research 
+% in developing novel quantum algorithms for simulation and optimization, which has significant applications in materials science and 
+% pharmaceuticals.
+% \newpage
+My research interests are driven by a single question: how can we model complex physical systems effectively? 
+The pursuit of this question has guided me across multiple computational frameworks, including molecular simulation, 
+quantum algorithms, and machine learning techniques. By participating in the Science Undergraduate Laboratory Internship, I aim to deepen my understanding of 
+quantum simulation and optimization methods by learning from experts in the field. This program aligns with my long-term goal of pursuing graduate studies in quantum algorithms 
+and contributing to the development of novel computational methods for simulating complex systems, with applications in 
+materials science and drug discovery.
+\\
+
+As an undergraduate research assistant in the Vermaas Lab, I work on molecular dynamics simulations of biomolecular systems 
+using VMD and NAMD. My tasks include setting up simulation systems, running simulations on high-performance computing clusters using SLURM, 
+and analyzing the results using Tcl and Python scripts. I study the effect of small molecules such as butanol and isobutanol on 
+bacterial membrane fluidity and stability. These simulations explain why such molecules disturb membranes and provide 
+potential solutions to engineer more robust membranes, insights that are essential for industrial-scale biofuel 
+production and difficult to obtain experimentally. This experience has shown me the power of computational approaches in understanding 
+complex mechanisms at the molecular level.
+\\
+
+At the same time, my experience highlighted the limitations of classical simulation. Simulating larger systems, capturing statistically 
+rare events, and reaching biologically significant timescales are computationally expensive, which limits the scope of 
+phenomena we can study. Quantum computing combines my passion for physics with computer science, and offers an alternative 
+approach to modelling complex systems, potentially overcoming some of the challenges of classical methods. In order to explore my interest in 
+quantum algorithms, I work as an Honors Research Scholar under Professor Ryan LaRose with a focus on generalized quantum 
+simulators. My research involves studying group-theoretic methods and compilation optimization techniques in Python and Cirq to develop
+methods for simulating quantum algorithms on classical computers, which is essential for benchmarking and refining larger-scale quantum algorithms.
+\\
+
+Alongside formal research, I have built several computational physics projects using Python, NumPy, Matplotlib, and Qiskit.
+I implemented a simulated annealing algorithm for minimizing Quadratic Unconstrained Binary Optimization (QUBO) problems, 
+using stochastic tunneling to escape local minima and enhance convergence to the global minimum. I was curious to see whether 
+quantum optimization algorithms would be able to achieve the same, so I formulated the same QUBO problems as Ising Hamiltonians and 
+solved them using adiabatic evolution on IBM's Aer simulator. I faced challenges in maintaining the adiabatic condition
+throughout the simulation, which I addressed by trying different evolution schedules and adjusting total evolution time. I 
+also had the opportunity to work on aqua-blue, an open-source machine learning package for predicting the time evolution of 
+dynamical systems. I contributed by implementing time-lag and benchmarking common dynamical systems such as the Lorenz and Mackey-Glass systems.
+These projects have helped me develop strong Python programming skills, gain experience with scientific computing packages, 
+and understand how to work with CI/CD workflows and version control software like Git and GitHub.
+\\
+
+My combined experience in molecular dynamics, quantum algorithms and computational physics has cultivated 
+my passion for contributing to research in methods for modelling physical mechanisms more efficiently. The SULI program at Oak Ridge National Laboratory 
+is an important step towards this goal. ORNL's focus on biophysics simulations, their quantum-HPC initiative and research on hybrid quantum-classical 
+algorithms closely align with my interests and are areas where my knowledge of molecular dynamics, scientific programming and quantum algorithms 
+are directly applicable. Additionally, my familiarity with high-performance computing environments such as MSU ICER's HPCC, NCSA Delta and NCSA DeltaAI will allow me to quickly adapt to ORNL's computing resources and effectively contribute to ongoing projects.
+ORNL's interdisciplinary research environment will allow me to learn how to conduct research at a national laboratory, 
+which will be beneficial for my career. I am eager to contribute my technical skills and passion for research to the program while expanding 
+my knowledge of modelling techniques, which will provide invaluable preparation for graduate school and a career in research.
+\end{document}
