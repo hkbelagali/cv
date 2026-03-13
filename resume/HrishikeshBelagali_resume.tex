@@ -20,6 +20,8 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{hyperref}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -134,17 +136,21 @@
 
 
 %-----------EDUCATION-----------
-\section{Objective}
-Driven Computer Science student with () experience seeking ()    opportunity 
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Michigan State University}{Expected Graduation: May 2028}
+      {Michigan State University}{Expected Graduation: Spring 2027}
       {}{4.0 GPA}
-      \vspace*{-1pt}
-    \textit{Bachelor of Science in Computer Science \\
-    Bachelor of Science in Advanced Mathematics}
+      \vspace*{-2pt}
+      \textit{Bachelor of Science in Computer Science, Minor in Mathematics}\\ 
   \resumeSubHeadingListEnd
+  \section{Relevant Coursework}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Graduate Quantum Algorithms, Graduate Computational Foundations of Artificial Intelligence,
+    Advanced Linear Algebra, Data Structures and Algorithms
+  }}
+\end{itemize}
 
 % %------RELEVANT COURSEWORK-------
 % \section{Relevant Coursework}
@@ -165,111 +171,135 @@ Driven Computer Science student with () experience seeking ()    opportunity
 %     %\resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------
-% \section{Experience}
-%   \resumeSubHeadingListStart
+% -----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Honors College}{August 2025 -- Present}
+      {Honors Research Scholar}{East Lansing, Michigan}
+    \resumeItemListStart
+        \resumeItem{Developed generalized algorithms for simulating quantum circuits using group homomorphisms and the stabilizer formalism.}
+        \resumeItem{Validated theoretical results using numerical experiments in Python, NumPy and Qiskit.}
+        \resumeItem{Analyzed circuit families to identify structural properties enabling reduced T-gate counts.}
+        \resumeItem{Prepared research figures, proofs and write-ups for an upcoming first-author manuscript submission.}
+    \resumeItemListEnd
 
-%     \resumeSubheading
-%       {Electronics Company}{May 2020 -- August 2020}
-%       {Software Engineer Intern}{City, State}
-%       \resumeItemListStart
-%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
-%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
-%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
-%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
-%       \resumeItemListEnd
-
-%     \resumeSubheading
-%       {Startup, Inc}{May 2019 -- August 2019}
-%       {Front End Developer Intern}{City, State}
-%       \resumeItemListStart
-%         \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
-%         \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
-%         \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
-%         \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
-%     \resumeItemListEnd
-    
-%   \resumeSubHeadingListEnd
-% \vspace{-16pt}
-
+    \resumeSubheading
+      {MSU-DOE Plant Research Laboratory}{December 2024 -- Present}
+      {Undegraduate Research Assistant}{East Lansing, Michigan}
+      \resumeItemListStart
+        \resumeItem{Investigated interactions between chloroplast targeting protein (At4g16060) and thylakoid membranes using molecular dynamics in NAMD.}
+        \resumeItem{Analyzed the effect of PDLP-5 on water permeability through PIP1;4 aquaporin tetramers using grid-steered molecular dynamics simulations and TCL scripting.}
+        \resumeItem{Conducted research on the effects of cyclopropane fatty acids on bacterial membrane structure and dynamics in the presence of commercially relevant biofuels.}
+        \resumeItem{Set up analysis pipelines using Python, NumPy, MDAnalysis and Matplotlib to extract and visualize system properties.}
+        \resumeItem{Prepared figures and write-ups for an upcoming first-author manuscript submission.}
+      \resumeItemListEnd
+  
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
 %-----------PROJECTS-----------
 \section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-         \resumeProjectHeading
-          {\textbf{Protein Structure Prediction} $|$ \emph{Python, MatPlotLib, NumPy, pyMOL, OVITO}}{}
+          % \resumeProjectHeading
+          % {\textbf{\vspace*{10pt}neurop} $|$ \emph{Python, PyTorch}}
+          % {\href{https://www.github.com/lonelyneutrin0/neurop}{%
+          %   \includegraphics[width=0.021\textwidth]{github.png}
+          % }
+          % \href{https://www.pypi.org/project/neurop}{%
+          % \includegraphics[width=0.021\textwidth]{pypi.png}}}
+          % \hspace*{7pt}Primary maintainer of neurop, a package building neural operators.
+          % \vspace{-7pt}
+          % \resumeItemListStart
+          %   \resumeItem{Developed Fourier Neural Operator (FNO) architectures for solving partial differential equations.}
+          %   \resumeItem{Implemented the Fractional Fourier Transform for use in Complex Neural Operators.}
+          % \resumeItemListEnd
+          % \vspace{-13pt }
+            \resumeProjectHeading
+          {\textbf{\vspace*{10pt}aqua-blue} $|$ \emph{Python, NumPy}}
+          {\href{https://www.github.com/jwjeffr/aqua-blue}{%
+            \includegraphics[width=0.021\textwidth]{github.png}
+          }
+          \href{https://www.pypi.org/project/aqua-blue}{%
+          \includegraphics[width=0.021\textwidth]{pypi.png}}}
+          \hspace*{7pt}Secondary maintainer of aqua-blue, a package building echo state networks.
+          \vspace{-7pt}
           \resumeItemListStart
-            \resumeItem{Proposed a genetic annealing algorithm to optimize Irbäck's off-lattice model}
-            \resumeItem{Generated real protein models with RMSD less than 3.}
-            \resumeItem{Accurately modelled protein folding through molecular dynamics}
+            \resumeItem{Implemented core reservoir computer hyperparameters including state time-lag, sparsity, and spectral radius.}
+            \resumeItem{Added timezone-aware datetime support to streamline integration with data pipelines.}
+          \resumeItemListEnd
+          \vspace{-13pt }
+          % \resumeProjectHeading
+          % {\textbf{\vspace*{10pt}aqua-blue-hyperopt} $|$ \emph{Python, NumPy, Hyperopt}}
+          % {\href{https://www.github.com/lonelyneutrin0/aqua-blue-hyperopt}{%
+          % \includegraphics[width=0.021\textwidth]{github.png}
+          % }
+          % \href{https://www.pypi.org/project/aqua-blue-hyperopt}{%
+          % \includegraphics[width=0.021\textwidth]{pypi.png}}}
+          % \hspace*{7pt}Primary maintainer of aqua-blue-hyperopt, a utility package for aqua-blue models
+          % \vspace{-7pt}
+          % \resumeItemListStart
+          %   \resumeItem{Created modular hyperparameter optimization functionality for aqua-blue reservoir computers.}
+          %   \resumeItem{Optimized quantum time evolution predictions of Gaussian wave packets with aqua-blue models. }
+          % \resumeItemListEnd
+          % \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Discretized Quantum Adiabatic Evolution} $|$ \emph{Python, Qiskit, NumPy}}{\href{https://www.github.com/lonelyneutrin0/Adiabatic-Quantum-Computation}{%
+          \includegraphics[width=0.021\textwidth]{github.png}}}
+          \resumeItemListStart
+            \resumeItem{Implemented a quantum adiabatic evolution algorithm using the Trotter–Suzuki approximation for time discretization.}
+            \resumeItem{Solved QUBO problems via quantum Ising models, improving solution convergence and stability.}
+          \resumeItemListEnd
+          \vspace{-13pt }
+          \resumeProjectHeading
+          {\textbf{Quantum Arithmetic Circuits} $|$ \emph{Python, Qiskit, NumPy}}{\href{https://www.github.com/lonelyneutrin0/Quantum-Arithmetic-Circuits}{%
+          \includegraphics[width=0.021\textwidth]{github.png}}}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented quantum circuits for addition, subtraction, and multiplication without classical overhead.}
+            \resumeItem{Applied the Quantum Fourier Transform to reduce qubit requirements for arithmetic operations.}
+          \resumeItemListEnd
+          \vspace{-13pt }
+         \resumeProjectHeading
+          {\textbf{Protein Structure Prediction} $|$ \emph{Python, MatPlotLib, NumPy, OVITO}}{\href{https://www.github.com/lonelyneutrin0/Protein-Structure-Prediction}{%
+          \includegraphics[width=0.021\textwidth]{github.png}}}
+          \resumeItemListStart
+            \resumeItem{Proposed a hybrid Monte Carlo algorithm to optimize Irbäck’s off-lattice protein folding model.}
+            \resumeItem{Accurately modelled protein folding within 1-4 RMSD.}
           \resumeItemListEnd
           \vspace{-13pt }
       \resumeProjectHeading
-      {\textbf{Quadratic Unconstrained Binary Optimization Problems} $|$ \emph{Python, MatPlotLib, NumPy}}{}
+      {\textbf{Quadratic Unconstrained Binary Optimization Problems} $|$ \emph{Python, MatPlotLib, NumPy}}{\href{https://www.github.com/lonelyneutrin0/qubo}{%
+          \includegraphics[width=0.021\textwidth]{github.png}}}
       \resumeItemListStart
-        \resumeItem{Developed a simulated annealing algorithm using Object-Oriented Programming to determine the global minimum of QUBO problems}
+        \resumeItem{Developed a simulated annealing algorithm to determine the global minimum of QUBO problems.}
         \resumeItem{Improved convergence through the implementation of dynamic stochastic tunneling.}
-      
       \resumeItemListEnd
-      \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{IUPAC Name and Chemistry Retrosynthesis Generator} $|$ \emph{Python}}{}
-          \resumeItemListStart
-            \resumeItem{Created a database of reactions and functional groups}
-            \resumeItem{Developed code to produce
-            organic compound names in accordance with IUPAC nomenclature}
-            \resumeItem{Built an algorithm for practice synthesis problems using IUPAC which closely resemble problems given in school exams}
-            \resumeItem{Generated problems used by fellow classmates and underclassmen}
-           
-            
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{FiveHive Survey Script} $|$ \emph{Python, Google Forms REST API}}{}
-          \resumeItemListStart
-            \resumeItem{Created a script with Google Forms' RESTful API to generate surveys for each of the Advanced Placement exams}
-            \resumeItem{Surveys received over 1000 responses combined}
-            \resumeItem{Added scripts to dynamically update questions for $>$30 surveys generated}
-            \resumeItem{Co-led a team to analyze survey data and gain input on popular resources for over 50,000 AP students}
-            
-          \resumeItemListEnd 
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
 
 %
-%-----------PROGRAMMING SKILLS-----------
+%-----------PROGRAMMING SKILLS----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, C++} \\
-     \textbf{Developer Tools}{: VS Code, Linux WSL, SLURM} \\
-     \textbf{Technologies/Frameworks}{: Git, GitHub} \\
+     \textbf{Languages}{: Python, C++, C, \LaTeX} \\
+     \textbf{Packages}{: NumPy, Qiskit, Cirq, PyTorch, SciPy, Matplotlib} \\
+     \textbf{Technologies/Frameworks}{: Git, GitHub, SLURM, CMake, Linux} \\
     }}
  \end{itemize}
  \vspace{-16pt}
 
 
 %-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        \resumeSubheading{12th Biennial Lake Conference}{December 2020}{Research}{Indian Institute of Science, Bengaluru}
-            \resumeItemListStart
-                \resumeItem{Carried out research on the Sarakki lake, analyzing 20 years of satellite data and tracking its pollution and eventual restoration}
-                \resumeItem{Visited the lake to collect macrophytes and photos of local flora and fauna}
-                \resumeItem{Review of conservation methods and proposal of a novel method to remove excess inorganic phosphates from lakes}
-                \resumeItem{Presented findings at IISc, won third place at the conference} 
-            \resumeItemListEnd
-         
-    \resumeSubHeadingListEnd
-    \section{Awards}
+    % \section{Awards}
     
-     \resumeItemListStart
-        \resumeItem{Sahyadri Young Ecologist of the Year, IISc }  
-        \resumeItem{CBSE Class First in my Math Class 98\%,  AECS MMPS}
-        \resumeItem{Best in Scientific Temper- Kumarans}
-        \resumeItem{CBSE Class 12 1st in my math class- 99\%, Kumarans}
-    \resumeItemListEnd
+    %  \resumeItemListStart
+    %     \resumeItem{Dean's List Fall 2024, Spring 2025}
+    %     \resumeItem{MSU President's Scholarship 2024}
+    %     \resumeItem{Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering}
+
+    % \resumeItemListEnd
 
 
 \end{document}
