@@ -1,0 +1,29 @@
+name: Sync CV into apps repo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  subtree-pull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout apps repo
+        uses: actions/checkout@v4
+        with:
+          repository: hkbelagali/apps
+          token: ${{ secrets.APPS_REPO_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Subtree pull latest cv content
+        run: |
+          git subtree pull --prefix=cv https://github.com/hkbelagali/cv.git main --squash \
+            -m "Auto-sync cv/ from hkbelagali/cv@${{ github.sha }}"
+
+      - name: Push to apps repo
+        run: git push origin main
