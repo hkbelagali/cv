@@ -69,9 +69,7 @@
 \cvsect{Summary}
 \vspace{-6pt}
 
-PhD applicant in Computer Science with interests in developing quantum algorithms for QM/MM and 
-ab initio molecular dynamics workflows, with research spanning classical simulation of quantum chemistry
-ans\"atze and molecular dynamics of biomolecular systems.
+PhD applicant in $\langle \rangle$ with research interests in quantum computing for quantum chemistry, \emph{ab-initio} and machine-learning molecular dynamics, fault-tolerant quantum compiling, and quantum error correction.
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
@@ -121,7 +119,7 @@ ans\"atze and molecular dynamics of biomolecular systems.
 \cvsect{RELEVANT COURSEWORK}
 \vspace{2pt}
 
-Graduate Quantum Algorithms, Quantum Physics, Graduate Computational Foundations of Artificial Intelligence, Graduate Tensor Networks, Linear Algebra
+Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Graduate Computational Foundations of Artificial Intelligence, Linear Algebra
 
 % \vspace{-10pt}
 \cvsect{EXPERIENCE}
@@ -132,8 +130,9 @@ Graduate Quantum Algorithms, Quantum Physics, Graduate Computational Foundations
 	{MSU-Q}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-		\item Developed fermionic backpropagation, an efficient classical method for simulating single-layer unitary cluster Jastrow circuits, including recent large-scale hardware experiments with up to 77 qubits and 3,500 two-qubit gates.
-		\item Implemented fermionic backpropagation into \textit{ffsim}, a Python package for simulating fermionic quantum systems.
+		\item Developed fermionic backpropagation, an efficient classical method for simulating recent large-scale quantum hardware experiments with up to 77 qubits and 3,500 two-qubit gates.
+		Achieved 20-fold runtime speedup through theoretical contributions and efficient GPU implementations.
+		\item Implemented fermionic backpropagation in \textit{ffsim}, a Python package for simulating fermionic quantum systems.
 		\item Built \textit{propaq}, a Heisenberg propagation package enabling circuit simulations in custom bases with support for custom noise and truncation policies.
 		\item Developed conjugate error correction codes, a method for aligning anisotropic codes in the presence of biased noise.
 	\end{itemize}
@@ -205,7 +204,7 @@ Graduate Quantum Algorithms, Quantum Physics, Graduate Computational Foundations
 \begin{entrylist}
 	\entry{propaq \\ Python, Rust}
 		{propaq}
-		{\href{https://github.com/hkbelagali/propaq}{github.com}}
+		{\href{https://github.com/hkbelagali/propaq}{github.com}/\href{https://pypi.org/project/propaq/}{pypi.org}}
 		{Primary developer of \textit{propaq}, a Python package for Heisenberg propagation, designed for large-scale simulation on HPC clusters.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Implmented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for optimal multi-threaded simulation.
@@ -216,7 +215,7 @@ Graduate Quantum Algorithms, Quantum Physics, Graduate Computational Foundations
 		}
 	\entry{ffsim \\ Python, Rust}
 		{ffsim}
-		{\href{https://github.com/qiskit/ffsim}{github.com}}
+		{\href{https://github.com/qiskit-community/ffsim}{github.com}}
 		{Contributed to \textit{ffsim}, a Python package for simulating fermionic quantum systems.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Implemented fermionic backpropagation, from "Efficient classical simulation of large-scale unitary cluster Jastrow circuits" (arXiv:2607.21337) into \textit{ffsim} for fast unitary cluster Jastrow ansatz simulation.
