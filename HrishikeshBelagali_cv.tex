@@ -79,7 +79,7 @@ PhD applicant in $\langle \rangle$ with research interests in quantum computing 
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-      Python, Rust, C++, \LaTeX
+      Python, Rust, C++, Tcl, \LaTeX
     \end{minipage}
     \vspace{4mm}
     
@@ -88,7 +88,7 @@ PhD applicant in $\langle \rangle$ with research interests in quantum computing 
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-    NumPy, PyTorch, JAX, scipy, Qiskit, Cirq, ruff, mypy, pytest
+	Qiskit, Cirq, NumPy, PyTorch, JAX, SciPy
     \end{minipage}
 	\vspace{4mm}
 
@@ -119,7 +119,8 @@ PhD applicant in $\langle \rangle$ with research interests in quantum computing 
 \cvsect{RELEVANT COURSEWORK}
 \vspace{2pt}
 
-Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Graduate Computational Foundations of Artificial Intelligence, Linear Algebra
+Quantum Algorithms$^\dagger$, Tensor Networks$^\dagger$,  Quantum Physics, Computational Foundations of Artificial Intelligence$^\dagger$, Linear Algebra \\\\ 
+$\mathbf{^\dagger}$\textbf{Graduate course}
 
 % \vspace{-10pt}
 \cvsect{EXPERIENCE}
@@ -130,8 +131,8 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 	{MSU-Q}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-		\item Developed fermionic backpropagation, an efficient classical method for simulating recent quantum experiments with up to 77 qubits and 3,500 two-qubit gates.
-		Achieved a 70-fold runtime speedup (7s to 0.1s per energy evaluation on an NVIDIA GH200 node) through theoretical contributions and efficient GPU implementations.
+		\item Developed fermionic backpropagation, an efficient classical method for simulating large-scale unitary cluster Jastrow circuits, combining new analytical
+		reductions with GPU-accelerated implementation to achieve a 70-fold speedup for circuits with up to 77 qubits, and 3,500 two-qubit gates.
 		\item Implemented fermionic backpropagation in \textit{ffsim}, a Python package for simulating fermionic quantum systems, extending the method's accessibility to the broader quantum chemistry research community.
 		\item Built \textit{propaq}, a Heisenberg propagation package achieving runtime competitive with state-of-the-art simulators while offering greater customizability, enabling circuit simulations in custom bases with support for custom noise and truncation policies.
 	\end{itemize}
@@ -142,8 +143,8 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 	{MSU Honors College/MSU-Q}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-	\item Developed a gateset-rotation algorithm for identifying optimal unitary subgroups for quantum compilation, advised by Professor Ryan LaRose. 
-	\item Investigated the utility of gateset rotation for Hamiltonian pre-processing and improving the performance of anisotropic error correction codes.
+	\item Developed a gateset-rotation algorithm for identifying unitary basis transformations to reduce non-Clifford synthesis cost in fault-tolerant quantum circuits.
+	\item Investigated the utility of unitary basis transformations for Hamiltonian pre-processing in time evolution simulations.
 	\end{itemize}
 	}
 	\entry 
@@ -158,7 +159,7 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 		\end{itemize}
 		}
 \end{entrylist}
-\cvsect{Public Engagement}
+\cvsect{Research Communication}
 \begin{entrylist}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MSU CoE, MI}}
 		{``Student View: Challenging the Quantum Advantage Boundary''}
@@ -168,9 +169,9 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 \cvsect{PUBLICATIONS} 
 
 \begin{enumerate}[label={[\arabic*]}, noitemsep, topsep=0pt, parsep=2pt, partopsep=0pt, leftmargin=18pt]
-	\item Hrishikesh Belagali, Ryan LaRose. "Propaq: A Python package for Heisenberg propagation", arXiv, 2026. manuscript submitted to \emph{Quantum} (pending review). Available: \href{https://arxiv.org/abs/2609.07730}{https://arxiv.org/abs/2609.07730}.
-	\item Hrishikesh Belagali, Thomas Van Camp, R. Pradeep, Sourin Das, Namit Anand, Ryan LaRose, ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits,'' \textit{arXiv}, 2026, manuscript submitted to \textit{Physical Review Letters} (pending review). Available: \href{https://arxiv.org/abs/2607.21337}{https://arxiv.org/abs/2607.21337}
-	\item Hrishikesh Belagali, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \textit{ChemRxiv}, 2026, manuscript submitted to \textit{ACS JPCB} (pending review). Available: \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}
+	\item \textbf{Hrishikesh Belagali}, Ryan LaRose. "Propaq: A Python package for Heisenberg propagation", \href{https://arxiv.org/abs/2609.07730}{\emph{arXiv:2609.07730 (2026)}}. Submitted to \emph{Quantum}.
+	\item \textbf{Hrishikesh Belagali}, Thomas Van Camp, R. Pradeep, Sourin Das, Namit Anand, Ryan LaRose, ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits,'' \href{https://arxiv.org/abs/2607.21337}{\emph{arXiv:2607.21337 (2026)}}. \\Submitted to \emph{Physical Review Letters.}
+	\item \textbf{Hrishikesh Belagali}, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{chemRxiv:15004463 (2026)}. Submitted to \emph{ACS Journal of Physical Chemistry B}.
 \end{enumerate}
 \cvsect{CONFERENCES}
 \begin{entrylist}
@@ -190,7 +191,7 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 		{2026 \\ \vspace{4pt}\color{gray} \textit{MSU UURAF}}
 		{Reducing T Gate Counts via Gateset Rotation}
 		{}
-		{Poster presented at MSU Undergraduate Research and Arts Forum. Awarded first place in the Engineering, Computer Science and Mathematics division.}
+		{Poster presented at MSU Undergraduate Research and Arts Forum. \textbf{Awarded first place} in the Engineering, Computer Science and Mathematics division.}
 	% \entry 
 	% 	{2025 \\ \vspace{4pt}\color{gray} \textit{}}
 	% 	{Aquaporin Water Transit Modulation via Protein Capping}
@@ -204,14 +205,14 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 	% 	{Abstract presented at First Great Lakes Plant Science Conference (contributed)}
 \end{entrylist}
 
-\cvsect{Open Source Contributions}
+\cvsect{Research Software \& Open Source}
 \begin{entrylist}
 	\entry{propaq \\ Python, Rust}
 		{propaq}
 		{\href{https://github.com/hkbelagali/propaq}{github.com}/\href{https://pypi.org/project/propaq/}{pypi.org}}
-		{Primary developer of \textit{propaq}, a Python package for Heisenberg propagation, designed for large-scale simulation on HPC clusters.
+		{Creator and primary developer of \textit{propaq}, a Python package for Heisenberg propagation, designed for large-scale simulation on HPC clusters.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-			\item Implemented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for optimal multi-threaded simulation.
+			\item Implemented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for efficient multi-threaded simulation.
 			\item Developed a Python interface integrating \textit{propaq} with Qiskit and Cirq for seamless simulation workflows using pyo3 bindings.
 			\item Designed a plugin system for developing custom noise and truncation policies in Python, Rust, C, and Julia
 			to enable user customization with minimal overhead.
@@ -268,7 +269,7 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
-\cvsect{Projects}
+\cvsect{Selected Projects}
 \begin{entrylist}
 	\entry
 		{Python \\ Qiskit}
