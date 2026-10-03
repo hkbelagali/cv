@@ -130,11 +130,10 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 	{MSU-Q}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-		\item Developed fermionic backpropagation, an efficient classical method for simulating recent large-scale quantum hardware experiments with up to 77 qubits and 3,500 two-qubit gates.
-		Achieved 20-fold runtime speedup through theoretical contributions and efficient GPU implementations.
-		\item Implemented fermionic backpropagation in \textit{ffsim}, a Python package for simulating fermionic quantum systems.
-		\item Built \textit{propaq}, a Heisenberg propagation package enabling circuit simulations in custom bases with support for custom noise and truncation policies.
-		\item Developed conjugate error correction codes, a method for aligning anisotropic codes in the presence of biased noise.
+		\item Developed fermionic backpropagation, an efficient classical method for simulating recent quantum experiments with up to 77 qubits and 3,500 two-qubit gates.
+		Achieved a 70-fold runtime speedup (7s to 0.1s per energy evaluation on an NVIDIA GH200 node) through theoretical contributions and efficient GPU implementations.
+		\item Implemented fermionic backpropagation in \textit{ffsim}, a Python package for simulating fermionic quantum systems, extending the method's accessibility to the broader quantum chemistry research community.
+		\item Built \textit{propaq}, a Heisenberg propagation package achieving runtime competitive with state-of-the-art simulators while offering greater customizability, enabling circuit simulations in custom bases with support for custom noise and truncation policies.
 	\end{itemize}
 	}
 	\entry
@@ -143,9 +142,8 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 	{MSU Honors College/MSU-Q}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-	\item Developed a gateset-rotation algorithm for identifying optimal compilation subgroups, reducing T-gate counts in Clifford+T circuit compilation, advised by Professor Ryan LaRose. % TODO: add T-gate reduction factor/percentage; awarded 1st place, MSU UURAF
-	\item Applied computational group theory methods to test subgroup membership in unitary groups, underpinning the compilation search.
-	\item Built a Python/Cirq pipeline implementing the optimization for generalized subgroups.
+	\item Developed a gateset-rotation algorithm for identifying optimal unitary subgroups for quantum compilation, advised by Professor Ryan LaRose. 
+	\item Investigated the utility of gateset rotation for Hamiltonian pre-processing and improving the performance of anisotropic error correction codes.
 	\end{itemize}
 	}
 	\entry 
@@ -156,10 +154,16 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Simulated the effects of small molecules like butanol on \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis} membrane dynamics.
 			\item Parameterized cyclopropane fatty acids using CHARMM-GUI and validated the parameters against experimental data. 
-			\item Characterized the interaction of chloroplast targeting protein (At4g16060) with thylakoid membranes via molecular dynamics simulations.
 			\item Analyzed the effect of PDLP-5 (Plasmodesmata Located Protein) on water flow rates through PIP1;4 aquaporin tetramer using grid-steered molecular dynamics.
 		\end{itemize}
 		}
+\end{entrylist}
+\cvsect{Public Engagement}
+\begin{entrylist}
+	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MSU CoE, MI}}
+		{``Student View: Challenging the Quantum Advantage Boundary''}
+		{\href{https://engineering.msu.edu/news/student-view-challenging-quantum-advantage-boundary}{engineering.msu.edu}}
+		{Article highlighting my quantum computing research journey, published by the College of Engineering, Michigan State University.}
 \end{entrylist}
 \cvsect{PUBLICATIONS} 
 
@@ -186,7 +190,7 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 		{2026 \\ \vspace{4pt}\color{gray} \textit{MSU UURAF}}
 		{Reducing T Gate Counts via Gateset Rotation}
 		{}
-		{Poster presented at MSU Undergraduate Research and Arts Forum. Awarded first place in the Computational Mathematics, Science and Engineering division.}
+		{Poster presented at MSU Undergraduate Research and Arts Forum. Awarded first place in the Engineering, Computer Science and Mathematics division.}
 	% \entry 
 	% 	{2025 \\ \vspace{4pt}\color{gray} \textit{}}
 	% 	{Aquaporin Water Transit Modulation via Protein Capping}
@@ -207,7 +211,7 @@ Graduate Quantum Algorithms,  Graduate Tensor Networks,  Quantum Physics, Gradua
 		{\href{https://github.com/hkbelagali/propaq}{github.com}/\href{https://pypi.org/project/propaq/}{pypi.org}}
 		{Primary developer of \textit{propaq}, a Python package for Heisenberg propagation, designed for large-scale simulation on HPC clusters.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-			\item Implmented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for optimal multi-threaded simulation.
+			\item Implemented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for optimal multi-threaded simulation.
 			\item Developed a Python interface integrating \textit{propaq} with Qiskit and Cirq for seamless simulation workflows using pyo3 bindings.
 			\item Designed a plugin system for developing custom noise and truncation policies in Python, Rust, C, and Julia
 			to enable user customization with minimal overhead.
