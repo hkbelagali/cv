@@ -41,7 +41,7 @@
 	
 	\vspace{6pt}
 	
-	{\Large Undergraduate Research Assistant} % Career or current job title
+	{\Large Quantum Algorithms \& Simulation Researcher} % Career or current job title
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
@@ -69,7 +69,7 @@
 \cvsect{Summary}
 \vspace{-6pt}
 
-PhD applicant with research interests in quantum computing for quantum chemistry, \emph{ab-initio} and machine-learning molecular dynamics, fault-tolerant quantum compiling, and quantum error correction.
+Quantum computing researcher working on the boundary of quantum advantage: classical simulation of quantum circuits (Heisenberg/Pauli propagation, fermionic simulation), quantum algorithms for chemistry, and fault-tolerant circuit compilation. First author on two quantum preprints and contributor to the Qiskit ecosystem (\textit{ffsim}).
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
@@ -88,16 +88,16 @@ PhD applicant with research interests in quantum computing for quantum chemistry
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-	Qiskit, Cirq, NumPy, PyTorch, JAX, SciPy
+	Qiskit, ffsim, Cirq, QuTiP, JAX, NumPy, SciPy, PyTorch, pyo3
     \end{minipage}
 	\vspace{4mm}
 
 	\begin{minipage}[t]{0.2\textwidth}
-        \textbf{Softwares:}
+        \textbf{Methods:}
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-    LAMMPS, OVITO, NAMD, VMD
+    Pauli/Majorana propagation, fermionic circuit simulation, Clifford+T synthesis, Trotterization, tensor networks, GPU/HPC computing
     \end{minipage}
     \vspace{1mm}
 \end{minipage}
@@ -122,7 +122,14 @@ PhD applicant with research interests in quantum computing for quantum chemistry
 Quantum Algorithms$^\dagger$, Tensor Networks$^\dagger$,  Quantum Physics, Computational Foundations of Artificial Intelligence$^\dagger$, Linear Algebra \\\\ 
 $\mathbf{^\dagger}$\textbf{Graduate course}
 
-% \vspace{-10pt}
+\cvsect{PUBLICATIONS}
+
+\begin{enumerate}[label={[\arabic*]}, noitemsep, topsep=0pt, parsep=2pt, partopsep=0pt, leftmargin=18pt]
+	\item \textbf{Hrishikesh Belagali}, Thomas Van Camp, R. Pradeep, Sourin Das, Namit Anand, Ryan LaRose, ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits,'' \href{https://arxiv.org/abs/2607.21337}{\emph{arXiv:2607.21337 (2026)}}. \\Submitted to \emph{Physical Review Letters} (revised manuscript under review).
+	\item \textbf{Hrishikesh Belagali}, Ryan LaRose. "Propaq: A Python package for Heisenberg propagation", \href{https://arxiv.org/abs/2609.07730}{\emph{arXiv:2609.07730 (2026)}}. Submitted to \emph{ACM Transactions on Software Engineering and Methodology}.
+	\item \textbf{Hrishikesh Belagali}, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{chemRxiv:15004463 (2026)}. Submitted to \emph{ACS Journal of Physical Chemistry B} (under revision).
+\end{enumerate}
+
 \cvsect{EXPERIENCE}
 \begin{entrylist}
 	\entry 
@@ -133,7 +140,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 		\item Developed fermionic backpropagation, an efficient classical method for simulating large-scale unitary cluster Jastrow circuits, combining new analytical
 		reductions with GPU-accelerated implementation to achieve a 70-fold speedup for circuits with up to 77 qubits, and 3,500 two-qubit gates.
-		\item Implemented fermionic backpropagation in \textit{ffsim}, a Python package for simulating fermionic quantum systems, extending the method's accessibility to the broader quantum chemistry research community.
+		\item Implemented fermionic backpropagation in Qiskit Community's \textit{ffsim}, a Python package for simulating fermionic quantum systems, extending the method's accessibility to the broader quantum chemistry research community.
 		\item Built \textit{propaq}, a Heisenberg propagation package achieving runtime competitive with state-of-the-art simulators while offering greater customizability, enabling circuit simulations in custom bases with support for custom noise and truncation policies.
 	\end{itemize}
 	}
@@ -153,45 +160,30 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{Vermaas Lab, Plant Research Laboratory}
 		{\vspace{-10pt}
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-			\item Simulated the effects of butanol and isobutanol on \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis} membranes to characterize their impact on membrane dynamics.
-			\item Ran large-scale molecular dynamics simulations on high-performance computing clusters (40,000+ GPU hours and 30TB+ of data) using NAMD
-			\item Identified key membrane components contributing to alcohol tolerance through data analysis in Python, TCL and VMD.
+			\item Ran large-scale molecular dynamics simulations of bacterial membranes on HPC clusters (40,000+ GPU hours, 30TB+ of data) using NAMD.
+			\item Built Python/Tcl analysis pipelines identifying the membrane components responsible for alcohol tolerance.
 		\end{itemize}
 		}
 \end{entrylist}
-\cvsect{Research Communication}
-\begin{entrylist}
-	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MSU CoE, MI}}
-		{``Student View: Challenging the Quantum Advantage Boundary''}
-		{\href{https://engineering.msu.edu/news/student-view-challenging-quantum-advantage-boundary}{engineering.msu.edu}}
-		{Article highlighting my quantum computing research journey, published by the College of Engineering, Michigan State University.}
-\end{entrylist}
-\cvsect{PUBLICATIONS} 
-
-\begin{enumerate}[label={[\arabic*]}, noitemsep, topsep=0pt, parsep=2pt, partopsep=0pt, leftmargin=18pt]
-	\item \textbf{Hrishikesh Belagali}, Ryan LaRose. "Propaq: A Python package for Heisenberg propagation", \href{https://arxiv.org/abs/2609.07730}{\emph{arXiv:2609.07730 (2026)}}. Submitted to \emph{ACM Transactions on Software Engineering and Methodology}.
-	\item \textbf{Hrishikesh Belagali}, Thomas Van Camp, R. Pradeep, Sourin Das, Namit Anand, Ryan LaRose, ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits,'' \href{https://arxiv.org/abs/2607.21337}{\emph{arXiv:2607.21337 (2026)}}. \\Submitted to \emph{Physical Review Letters} (revised manuscript under review).
-	\item \textbf{Hrishikesh Belagali}, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{chemRxiv:15004463 (2026)}. Submitted to \emph{ACS Journal of Physical Chemistry B} (under revision).
-\end{enumerate}
 \cvsect{CONFERENCES}
 \begin{entrylist}
-	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{ACS, IL}}
-		{Molecular mechanisms of alcohol tolerance in Clostridium acetobutylicum and Zymomonas mobilis: The role of cyclopropane fatty acids and hopanoids}
-		{\href{https://acs.digitellinc.com/p/s/molecular-mechanisms-of-alcohol-tolerance-in-clostridium-acetobutylicum-and-zymomonas-mobilis-the-role-of-cyclopropane-fatty-acids-and-hopanoids-661279}{acs.digitellinc.com}}
-		{Poster presented at ACS Fall 2026 Conference}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MQC, IN}}
 		{Efficient classical simulation of large-scale unitary cluster Jastrow circuits}
 		{}
 		{Poster presented at MQC Entanglement 2026}
-	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{GLBRC, WI}}
-		{The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis}}
-		{}
-		{Poster presented at Great Lakes Bioenergy Research Center Annual Science Meeting.}
 	\entry
 		{2026 \\ \vspace{4pt}\color{gray} \textit{MSU UURAF}}
 		{Reducing T Gate Counts via Gateset Rotation}
 		{}
 		{Poster presented at MSU Undergraduate Research and Arts Forum. \textbf{Awarded first place} in the Engineering, Computer Science and Mathematics division.}
+	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{ACS, IL}}
+		{Molecular mechanisms of alcohol tolerance in Clostridium acetobutylicum and Zymomonas mobilis: The role of cyclopropane fatty acids and hopanoids}
+		{\href{https://acs.digitellinc.com/p/s/molecular-mechanisms-of-alcohol-tolerance-in-clostridium-acetobutylicum-and-zymomonas-mobilis-the-role-of-cyclopropane-fatty-acids-and-hopanoids-661279}{acs.digitellinc.com}}
+		{Poster presented at ACS Fall 2026 Conference}
+	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{GLBRC, WI}}
+		{The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis}}
+		{}
+		{Poster presented at Great Lakes Bioenergy Research Center Annual Science Meeting.}
 	\entry 
 		{2025 \\ \vspace{4pt}\color{gray} \textit{MI}}
 		{Aquaporin Water Transit Modulation via Protein Capping}
@@ -257,6 +249,13 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	\end{itemize}
 		}
 \end{entrylist}
+\cvsect{Research Communication}
+\begin{entrylist}
+	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MSU CoE, MI}}
+		{``Student View: Challenging the Quantum Advantage Boundary''}
+		{\href{https://engineering.msu.edu/news/student-view-challenging-quantum-advantage-boundary}{engineering.msu.edu}}
+		{Article highlighting my quantum computing research journey, published by the College of Engineering, Michigan State University.}
+\end{entrylist}
 \cvsect{HONORS AND AWARDS}
 \vspace{-10pt}
 \begin{itemize}
@@ -266,7 +265,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	\item Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering (2024) -- \$2,000
 	\item MSU President's Scholarship (2024) -- \$30,000
 \end{itemize}
-\clearpage
+% \clearpage
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
@@ -281,7 +280,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{Python \\ Qiskit}
 		{Adiabatic Quantum Computation}
 		{\href{https://github.com/hkbelagali/Adiabatic-Quantum-Computation}{github.com}}
-		{Implemented a quantum adiabatic algorithm to solve QUBO type problems using the Trotter-Suzuki approximation and quantum Ising model formulation techniques. 
+		{Implemented an adiabatic quantum algorithm in Qiskit to solve QUBO-type problems using Trotter-Suzuki product formulas and Ising-model formulations.
 		\\Extended this project in my Graduate Quantum Algorithms course to investigate the effects of hardware noise on accuracy and convergence.}
 	% \entry 
 	% 	{Python \\ Qiskit}
@@ -298,11 +297,6 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	% 	{Langevin Monte Carlo}
 	% 	{\href{https://github.com/hkbelagali/Metropolis-Langevin-Algorithm}{github.com}}
 	% 	{Metropolis-adjusted Langevin algorithm for sampling from intractable probability distributions.}
-	\entry
-		{Python \\ OVITO \\ pyMOL }
-		{Genetic Annealing to Determine Protein Structures}
-		{\href{https://github.com/hkbelagali/Protein-Structure-Prediction}{github.com}}
-		{Monte Carlo Genetic Algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD < 3.0).}	
 	% \entry
 	% 	{Python \\ NumPy}
 	% 	{foldopt}
