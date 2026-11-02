@@ -23,6 +23,7 @@
 
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage{multicol}
+\usepackage{needspace}
 \setlength{\columnsep}{0mm}
 %----------------------------------------------------------------------------------------
 \usepackage{lipsum}  
@@ -66,10 +67,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.46\textwidth}
-\cvsect{Summary}
+\cvsect{Research Interests}
 \vspace{-6pt}
 
-Quantum computing researcher working on the boundary of quantum advantage: classical simulation of quantum circuits (Heisenberg/Pauli propagation, fermionic simulation), quantum algorithms for chemistry, and fault-tolerant circuit compilation. First author on two quantum preprints and contributor to the Qiskit ecosystem (\textit{ffsim}).
+{\fontsize{10}{13}\selectfont
+\begin{itemize}[noitemsep,topsep=0pt,parsep=1pt,partopsep=0pt, leftmargin=10pt]
+	\item Classical simulation of quantum circuits
+	\item Quantum algorithms for chemistry
+	\item Quantum advantage
+	\item Fault-tolerant quantum compiling
+	\item Quantum error correction
+\end{itemize}}
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
@@ -97,7 +105,7 @@ Quantum computing researcher working on the boundary of quantum advantage: class
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-    Pauli/Majorana propagation, fermionic circuit simulation, Clifford+T synthesis, Trotterization, tensor networks, GPU/HPC computing
+    Pauli/Majorana propagation, fermionic circuit simulation, Clifford+T synthesis, tensor networks, GPU/HPC computing
     \end{minipage}
     \vspace{1mm}
 \end{minipage}
@@ -165,6 +173,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		\end{itemize}
 		}
 \end{entrylist}
+\needspace{6\baselineskip}
 \cvsect{CONFERENCES}
 \begin{entrylist}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MQC, IN}}
@@ -184,17 +193,6 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis}}
 		{}
 		{Poster presented at Great Lakes Bioenergy Research Center Annual Science Meeting.}
-	\entry 
-		{2025 \\ \vspace{4pt}\color{gray} \textit{MI}}
-		{Aquaporin Water Transit Modulation via Protein Capping}
-		{\href{https://acs.digitellinc.com/p/s/aquaporin-water-transit-modulation-via-protein-capping-638984}{acs.digitellinc.com}}
-		{Poster presented at ACS Fall 2025 Conference}
-	\entry 
-		{2025 \\ \vspace{4pt}\color{gray} \textit{ACS, D.C.}}
-		{Evaluating the Interaction of Chloroplast-targeting Protein (At4g16060) with
-		Thylakoid Membrane}
-		{}
-		{Poster presented at First Great Lakes Plant Science Conference}
 \end{entrylist}
 
 \cvsect{Research Software \& Open Source}
@@ -229,17 +227,6 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	\end{itemize}
 	}
 \entry
-	{Python \\ NumPy}
-	{aqua-blue}
-	{\href{https://github.com/jwjeffr/aqua-blue}{github.com}/\href{https://pypi.org/project/aqua-blue/}{pypi.org}}
-	{Secondary maintainer of aqua-blue, a package building echo state networks.
-	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-	\item Implemented reservoir state time-lag, sparsity and spectral radius to improve prediction accuracy.
-	\item Introduced timezone-aware datetime support for seamless interfacing with data pipelines.
-	\item Demonstrated prediction capability by predicting quantum time evolution of Gaussian wave packets. 
-	\end{itemize}
-	}
-\entry
 	{tce-lib \\ Python}
 	{tce-lib}
 	{\href{https://github.com/MUEXLY/tce-lib}{github.com}}
@@ -269,7 +256,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
-\cvsect{Selected Projects}
+\vspace{-8pt}\cvsect{Selected Projects}
 \begin{entrylist}
 	% \entry 
 	% 	{Python \\ Qiskit} 
@@ -280,8 +267,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{Python \\ Qiskit}
 		{Adiabatic Quantum Computation}
 		{\href{https://github.com/hkbelagali/Adiabatic-Quantum-Computation}{github.com}}
-		{Implemented an adiabatic quantum algorithm in Qiskit to solve QUBO-type problems using Trotter-Suzuki product formulas and Ising-model formulations.
-		\\Extended this project in my Graduate Quantum Algorithms course to investigate the effects of hardware noise on accuracy and convergence.}
+		{Implemented an adiabatic algorithm in Qiskit for QUBO problems via Trotterized Ising-model evolution; extended it in Graduate Quantum Algorithms to study hardware-noise effects on accuracy and convergence.}
 	% \entry 
 	% 	{Python \\ Qiskit}
 	% 	{Quantum Arithmetic Circuits}
