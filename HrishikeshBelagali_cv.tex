@@ -27,6 +27,8 @@
 %----------------------------------------------------------------------------------------
 \usepackage{lipsum}  
 % Underline all hyperlinks so they read as links
+% Same as \entry but without the trailing empty row; use for the last entry of the document
+\newcommand{\lastentry}[4]{\parbox[t]{0.15\textwidth}{\small #1}&\parbox[t]{0.85\textwidth}{\textbf{#2}\hfill{\footnotesize \textbf{\textcolor{black}{#3}}}\\#4}\\}
 \let\oldhref\href
 \newcommand{\linkul}[1]{\setbox0\hbox{#1}\rlap{\textcolor{black!35}{\rule[-1.6pt]{\wd0}{0.3pt}}}\box0}
 \renewcommand{\href}[2]{\oldhref{#1}{\linkul{#2}}}
@@ -186,7 +188,7 @@ PhD applicant with research interests in quantum algorithms for time evolution, 
 		{2026 \\ \vspace{4pt}\color{gray} \textit{MSU UURAF}}
 		{Reducing T Gate Counts via Gateset Rotation}
 		{}
-		{Poster presented at MSU Undergraduate Research and Arts Forum. \textbf{Awarded first place.}}
+		{Poster presented at MSU Undergraduate Research and Arts Forum. \textbf{Awarded first place} in the Engineering, Computer Science and Mathematics division.}
 	\entry 
 		{2025 \\ \vspace{4pt}\color{gray} \textit{ACS, D.C.}}
 		{Aquaporin Water Transit Modulation via Protein Capping}
@@ -214,17 +216,17 @@ PhD applicant with research interests in quantum algorithms for time evolution, 
 		}
 	\entry{ffsim \\ Python, Rust}
 		{ffsim}
-		{\href{https://github.com/qiskit-community/ffsim/releases/tag/v0.0.85}{github.com}}
+		{\href{https://github.com/Qiskit/ffsim/pull/684}{PR \#684}}
 		{Contributed to \textit{ffsim}, a Python package for simulating fermionic quantum systems.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-			\item Implemented fermionic backpropagation (arXiv:2607.21337) in \textit{ffsim} for fast UCJ ansatz simulation.
+			\item Implemented fermionic backpropagation (\href{https://arxiv.org/abs/2607.21337}{arXiv:2607.21337}) in \textit{ffsim} for fast UCJ ansatz simulation.
 			\item Created a JAX-based implementation for GPU-accelerated variational optimization.
 		\end{itemize}
 		}
 \entry
 	{QuTiP \\ Python}
 	{Quantum Toolbox in Python (QuTiP)}
-	{\href{https://github.com/qutip/qutip}{github.com}}
+	{\href{https://github.com/qutip/qutip/pull/2731}{PR \#2731}}
 	{Contributed to QuTiP: added support for returning eigenkets as a Qobj operator.}
 \entry
 	{aqua-blue \\ Python}
@@ -240,7 +242,7 @@ PhD applicant with research interests in quantum algorithms for time evolution, 
 \entry
 	{tce-lib \\ Python}
 	{tce-lib}
-	{\href{https://github.com/MUEXLY/tce-lib}{github.com}}
+	{\href{https://github.com/MUEXLY/tce-lib/pull/77}{PR \#77}}
 	{Contributed to tce-lib, a Python package for tensorial cluster expansion models of concentrated alloys.
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 	\item Implemented lazy evaluation of Monte Carlo trajectories for efficient simulation on HPC clusters.
@@ -297,8 +299,8 @@ PhD applicant with research interests in quantum algorithms for time evolution, 
 	% 	{Langevin Monte Carlo}
 	% 	{\href{https://github.com/hkbelagali/Metropolis-Langevin-Algorithm}{github.com}}
 	% 	{Metropolis-adjusted Langevin algorithm for sampling from intractable probability distributions.}
-	\entry
-		{Python \\ OVITO \\ PyMOL }
+	\lastentry
+		{Python \\ OVITO, PyMOL}
 		{Genetic Annealing to Determine Protein Structures}
 		{\href{https://github.com/hkbelagali/Protein-Structure-Prediction}{github.com}}
 		{Monte Carlo Genetic Algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD $<$ 3.0~\AA).}	
