@@ -26,6 +26,10 @@
 \setlength{\columnsep}{0mm}
 %----------------------------------------------------------------------------------------
 \usepackage{lipsum}  
+% Underline all hyperlinks so they read as links
+\let\oldhref\href
+\newcommand{\linkul}[1]{\setbox0\hbox{#1}\rlap{\textcolor{black!35}{\rule[-1.6pt]{\wd0}{0.3pt}}}\box0}
+\renewcommand{\href}[2]{\oldhref{#1}{\linkul{#2}}}
 
 
 \begin{document}
@@ -67,7 +71,7 @@
 \cvsect{Summary}
 \vspace{-6pt}
 
-PhD applicant with research interests in quantum algorithms, \emph{ab-initio} and machine-learning molecular dynamics, fault-tolerant quantum compiling, and quantum error correction.
+PhD applicant with research interests in quantum algorithms for time evolution, \emph{ab initio} and machine-learning molecular dynamics, fault-tolerant quantum compilation, and quantum error correction.
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
@@ -91,7 +95,7 @@ PhD applicant with research interests in quantum algorithms, \emph{ab-initio} an
 	\vspace{4mm}
 
 	\begin{minipage}[t]{0.2\textwidth}
-        \textbf{Softwares:}
+        \textbf{Software:}
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
@@ -108,9 +112,9 @@ PhD applicant with research interests in quantum algorithms, \emph{ab-initio} an
 \begin{entrylist}
     \entry
 		{\hspace{10pt}}
-		{Computer Science (B.S)}
+		{Computer Science (B.S.)}
 		{Michigan State University Honors College}
-		{2024-2027 (expected) \\ 
+		{2024--2027 (expected) \\ 
 		Current GPA: 4.0}
 \end{entrylist}
 \vspace{-10pt}
@@ -124,56 +128,59 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 \cvsect{EXPERIENCE}
 \begin{entrylist}
 	\entry 
-	{2026--}
+	{2026--Present}
 	{Undergraduate Research Assistant} 
-	{MSU-Q}
+	{MSU-Q \textmd{(Advisor: Prof.~Ryan LaRose)}}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 		\item Developed fermionic backpropagation, an efficient classical method for simulating large-scale unitary cluster Jastrow circuits, combining new analytical
-		reductions with GPU-accelerated implementation to achieve a 70-fold speedup for circuits with up to 77 qubits, and 3,500 two-qubit gates.
-		\item Implemented fermionic backpropagation in \textit{ffsim}, a Python package for simulating fermionic quantum systems, extending the method's accessibility to the broader quantum chemistry research community.
-		\item Built \textit{propaq}, a Heisenberg propagation package achieving runtime competitive with state-of-the-art simulators while offering greater customizability, enabling circuit simulations in custom bases with support for custom noise and truncation policies.
+		reductions with a GPU-accelerated implementation to achieve a 70-fold speedup for circuits with up to 77 qubits and 3,500 two-qubit gates.
+		\item Built \textit{propaq}, a Heisenberg propagation package achieving runtimes competitive with state-of-the-art simulators while offering greater customizability, enabling circuit simulations in arbitrary bases with support for custom noise and truncation policies.
+		\item Investigated unitary basis transformations for improving error correction code performance in the presence of biased noise.
+		\item Analyzed the use of the canonical polyadic decomposition for pre-processing chemistry Hamiltonians to reduce time evolution costs.
 	\end{itemize}
 	}
 	\entry
 	{2025--2026}
 	{Honors Research Scholar}
-	{MSU Honors College/MSU-Q}
+	{MSU Honors College/MSU-Q \textmd{(Advisor: Prof.~Ryan LaRose)}}
 	{\vspace{-10pt}
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-	\item Developed a gateset-rotation algorithm for identifying unitary basis transformations to reduce non-Clifford synthesis cost in fault-tolerant quantum circuits.
-	\item Investigated the utility of unitary basis transformations for Hamiltonian pre-processing in time evolution simulations.
+	\item Developed a gateset-rotation algorithm for identifying unitary basis transformations to reduce non-Clifford synthesis cost for fault-tolerant quantum algorithms.
+	\item Investigated the utility of unitary basis transformations for Hamiltonian pre-processing in time evolution algorithms.
 	\end{itemize}
 	}
 	\entry 
-		{2024--}
+		{2024--Present}
 		{Undergraduate Research Assistant}
-		{Vermaas Lab, Plant Research Laboratory}
+		{Vermaas Lab, Plant Research Laboratory \textmd{(Advisor: Prof.~Josh Vermaas)}}
 		{\vspace{-10pt}
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Simulated the effects of butanol and isobutanol on \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis} membranes to characterize their impact on membrane dynamics.
-			\item Ran large-scale molecular dynamics simulations on high-performance computing clusters (40,000+ GPU hours and 30TB+ of data) using NAMD
-			\item Identified key membrane components contributing to alcohol tolerance through data analysis in Python, TCL and VMD.
+			\item Ran large-scale molecular dynamics simulations on high-performance computing clusters (40,000+ GPU hours and 30TB+ of data) using NAMD.
+			\item Identified key membrane components contributing to alcohol tolerance through data analysis in Python, Tcl, and VMD.
+			\item Investigated the effect of the PDLP5 protein cap on water transport in PIP1;4 aquaporins via grid-steered molecular dynamics.
 		\end{itemize}
 		}
 \end{entrylist}
 \cvsect{PUBLICATIONS} 
 
 \begin{enumerate}[label={[\arabic*]}, noitemsep, topsep=0pt, parsep=2pt, partopsep=0pt, leftmargin=18pt]
-	\item \textbf{Hrishikesh Belagali}, Ryan LaRose. "Propaq: A Python package for Heisenberg propagation", \href{https://arxiv.org/abs/2609.07730}{\emph{arXiv:2609.07730 (2026)}}. Submitted to \emph{ACM Transactions on Software Engineering and Methodology}.
+	\item \textbf{Hrishikesh Belagali}, Ryan LaRose, ``Propaq: A Python package for Heisenberg Propagation,'' \href{https://arxiv.org/abs/2609.07730}{\emph{arXiv:2609.07730 (2026)}}. Submitted to \emph{ACM Transactions on Software Engineering and Methodology}.
 	\item \textbf{Hrishikesh Belagali}, Thomas Van Camp, R. Pradeep, Sourin Das, Namit Anand, Ryan LaRose, ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits,'' \href{https://arxiv.org/abs/2607.21337}{\emph{arXiv:2607.21337 (2026)}}. \\Submitted to \emph{Physical Review Letters} (revised manuscript under review).
-	\item \textbf{Hrishikesh Belagali}, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{chemRxiv:15004463 (2026)}. Submitted to \emph{ACS Journal of Physical Chemistry B} (under revision).
+	\item \textbf{Hrishikesh Belagali}, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{ChemRxiv:15004463 (2026)}. Submitted to \emph{The Journal of Physical Chemistry B} (under revision).
 \end{enumerate}
+\newpage
 \cvsect{CONFERENCES}
 \begin{entrylist}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{ACS, IL}}
-		{Molecular mechanisms of alcohol tolerance in Clostridium acetobutylicum and Zymomonas mobilis: The role of cyclopropane fatty acids and hopanoids}
+		{Molecular mechanisms of alcohol tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis}: The role of cyclopropane fatty acids and hopanoids}
 		{\href{https://acs.digitellinc.com/p/s/molecular-mechanisms-of-alcohol-tolerance-in-clostridium-acetobutylicum-and-zymomonas-mobilis-the-role-of-cyclopropane-fatty-acids-and-hopanoids-661279}{acs.digitellinc.com}}
-		{Poster presented at ACS Fall 2026 Conference}
+		{Poster presented at ACS Fall 2026 Conference.}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MQC, IN}}
 		{Efficient classical simulation of large-scale unitary cluster Jastrow circuits}
 		{}
-		{Poster presented at MQC Entanglement 2026}
+		{Poster presented at MQC Entanglement 2026.}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{GLBRC, WI}}
 		{The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis}}
 		{}
@@ -187,13 +194,13 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{2025 \\ \vspace{4pt}\color{gray} \textit{ACS, D.C.}}
 		{Aquaporin Water Transit Modulation via Protein Capping}
 		{\href{https://acs.digitellinc.com/p/s/aquaporin-water-transit-modulation-via-protein-capping-638984}{acs.digitellinc.com}}
-		{Poster presented at ACS Fall 2025 Conference}
+		{Poster presented at ACS Fall 2025 Conference.}
 	\entry 
 		{2025 \\ \vspace{4pt}\color{gray} \textit{MI}}
 		{Evaluating the Interaction of Chloroplast-targeting Protein (At4g16060) with
 		Thylakoid Membrane}
 		{}
-		{Poster presented at First Great Lakes Plant Science Conference}
+		{Poster presented at First Great Lakes Plant Science Conference.}
 \end{entrylist}
 
 \cvsect{Research Software \& Open Source}
@@ -204,7 +211,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{Creator and primary developer of \textit{propaq}, a Python package for Heisenberg propagation, designed for large-scale simulation on HPC clusters.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Implemented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for efficient multi-threaded simulation.
-			\item Developed a Python interface integrating \textit{propaq} with Qiskit and Cirq for seamless simulation workflows using pyo3 bindings.
+			\item Developed a Python interface integrating \textit{propaq} with Qiskit and Cirq for seamless simulation workflows using PyO3 bindings.
 			\item Designed a plugin system for developing custom noise and truncation policies in Python, Rust, C, and Julia
 			to enable user customization with minimal overhead.
 		\end{itemize}
@@ -214,7 +221,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{\href{https://github.com/qiskit-community/ffsim/releases/tag/v0.0.85}{github.com}}
 		{Contributed to \textit{ffsim}, a Python package for simulating fermionic quantum systems.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-			\item Implemented fermionic backpropagation, from "Efficient classical simulation of large-scale unitary cluster Jastrow circuits" (arXiv:2607.21337) into \textit{ffsim} for fast unitary cluster Jastrow ansatz simulation.
+			\item Implemented fermionic backpropagation from ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits'' (arXiv:2607.21337) into \textit{ffsim} for fast unitary cluster Jastrow ansatz simulation.
 			\item Created a JAX-based implementation for GPU-accelerated variational optimization.
 		\end{itemize}
 		}
@@ -222,27 +229,27 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	{QuTiP \\ Python}
 	{Quantum Toolbox in Python (QuTiP)}
 	{\href{https://github.com/qutip/qutip}{github.com}}
-	{Contributed to QuTiP, an open-source software for simulating quantum systems.
+	{Contributed to QuTiP, an open-source library for simulating quantum systems.
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 	\item Implemented functionality to return eigenkets as an operator in the Qobj class.
 	\end{itemize}
 	}
 \entry
-	{Python \\ NumPy}
+	{aqua-blue \\ Python}
 	{aqua-blue}
 	{\href{https://github.com/jwjeffr/aqua-blue}{github.com}/\href{https://pypi.org/project/aqua-blue/}{pypi.org}}
-	{Secondary maintainer of aqua-blue, a package building echo state networks.
+	{Secondary maintainer of aqua-blue, a Python package for building echo state networks.
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-	\item Implemented reservoir state time-lag, sparsity and spectral radius to improve prediction accuracy.
+	\item Implemented reservoir state time-lag, sparsity, and spectral radius to improve prediction accuracy.
 	\item Introduced timezone-aware datetime support for seamless interfacing with data pipelines.
-	\item Demonstrated prediction capability by predicting quantum time evolution of Gaussian wave packets. 
+	\item Demonstrated forecasting capability on the quantum time evolution of Gaussian wave packets. 
 	\end{itemize}
 	}
 \entry
 	{tce-lib \\ Python}
 	{tce-lib}
 	{\href{https://github.com/MUEXLY/tce-lib}{github.com}}
-	{Contributed to tce-lib, a Python package for building tensor cluster expansion models for concentrated alloys.
+	{Contributed to tce-lib, a Python package for building tensorial cluster expansion models for concentrated alloys.
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 	\item Implemented lazy evaluation of Monte Carlo trajectories for efficient simulation on HPC clusters.
 	\end{itemize}
@@ -252,11 +259,12 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 \vspace{-10pt}
 \begin{itemize}
 	\item First place at MSU UURAF in the Engineering, Computer Science and Mathematics division (2026)
-	\item Wielenga Research Scholarship, Honors College (2025-2026) -- Awarded to 15-20 MSU students per year
+	\item Wielenga Research Scholarship, Honors College (2025--2026) -- Awarded to 15--20 MSU students per year
 	\item Dean's List (Fall 2024, Spring 2025, Fall 2025, Spring 2026)
 	\item Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering (2024) -- \$2,000
 	\item MSU President's Scholarship (2024) -- \$30,000
 \end{itemize}
+\newpage
 	\cvsect{Research Communication}
 	\begin{entrylist}
 		\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MSU CoE, MI}}
@@ -264,22 +272,21 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 			{\href{https://engineering.msu.edu/news/student-view-challenging-quantum-advantage-boundary}{engineering.msu.edu}}
 			{Article highlighting my quantum computing research journey, published by the College of Engineering, Michigan State University.}
 	\end{entrylist}
-	\clearpage
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
 \cvsect{Selected Projects}
 \begin{entrylist}
-	% \entry 
-	% 	{Python \\ Qiskit} 
-	% 	{Hamiltonian Tensor Compression for Time Evolution on Quantum Computers}
-	% 	{}
-	% 	{}
+	\entry 
+		{Python \\ Qiskit} 
+		{Hamiltonian Tensor Compression for Time Evolution on Quantum Computers}
+		{}
+		{Extended my work on the canonical polyadic decomposition for factorizing chemistry Hamiltonians as part of my Graduate Tensor Networks course taught by Prof. Ryan LaRose.}
 	\entry
 		{Python \\ Qiskit}
 		{Adiabatic Quantum Computation}
 		{\href{https://github.com/hkbelagali/Adiabatic-Quantum-Computation}{github.com}}
-		{Implemented a quantum adiabatic algorithm to solve QUBO type problems using the Trotter-Suzuki approximation and quantum Ising model formulation techniques. 
+		{Implemented a quantum adiabatic algorithm to solve QUBO-type problems using the Trotter-Suzuki approximation and quantum Ising model formulation techniques. 
 		\\Extended this project in my Graduate Quantum Algorithms course to investigate the effects of hardware noise on accuracy and convergence.}
 	% \entry 
 	% 	{Python \\ Qiskit}
@@ -297,20 +304,20 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	% 	{\href{https://github.com/hkbelagali/Metropolis-Langevin-Algorithm}{github.com}}
 	% 	{Metropolis-adjusted Langevin algorithm for sampling from intractable probability distributions.}
 	\entry
-		{Python \\ OVITO \\ pyMOL }
+		{Python \\ OVITO \\ PyMOL }
 		{Genetic Annealing to Determine Protein Structures}
 		{\href{https://github.com/hkbelagali/Protein-Structure-Prediction}{github.com}}
-		{Monte Carlo Genetic Algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD < 3.0).}	
+		{Monte Carlo Genetic Algorithm to determine protein structures through the optimization of Irbäck's off-lattice model energy equation (RMSD $<$ 3.0~\AA).}	
 	% \entry
 	% 	{Python \\ NumPy}
 	% 	{foldopt}
 	% 	{\href{https://github.com/hkbelagali/foldopt}{github.com}}
 	% 	{Python package for model-agnostic protein structure optimization.}
-	% \entry
-	% 	{Python}
-	% 	{Quadratic Unconstrained Binary Optimization}
-	% 	{\href{https://github.com/hkbelagali/qubo}{github.com}}
-	% 	{Stochastic tunneling-enhanced simulated annealing for solving QUBO-type problems.}
+	\entry
+		{Python}
+		{Quadratic Unconstrained Binary Optimization}
+		{\href{https://github.com/hkbelagali/qubo}{github.com}}
+		{Stochastic tunneling-enhanced simulated annealing for solving QUBO-type problems.}
 	% \entry
 	% 	{Python \\ PyTorch \\ pytest}
 	% 	{neurop}
