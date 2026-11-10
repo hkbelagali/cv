@@ -115,14 +115,10 @@ PhD applicant with research interests in quantum algorithms for time evolution, 
 		{Computer Science (B.S.)}
 		{Michigan State University Honors College}
 		{2024--2027 (expected) \\ 
-		Current GPA: 4.0}
+		Current GPA: 4.0 \\[4pt]
+		\textbf{Relevant coursework:} Quantum Algorithms$^\dagger$, Tensor Networks$^\dagger$, Quantum Physics, Computational Foundations of Artificial Intelligence$^\dagger$, Linear Algebra 
+		\\\vspace*{-9pt}({\footnotesize $^\dagger$Graduate course})}
 \end{entrylist}
-\vspace{-10pt}
-\cvsect{RELEVANT COURSEWORK}
-\vspace{2pt}
-
-Quantum Algorithms$^\dagger$, Tensor Networks$^\dagger$,  Quantum Physics, Computational Foundations of Artificial Intelligence$^\dagger$, Linear Algebra \\\\ 
-$\mathbf{^\dagger}$\textbf{Graduate course}
 
 % \vspace{-10pt}
 \cvsect{EXPERIENCE}
@@ -163,6 +159,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		\end{itemize}
 		}
 \end{entrylist}
+\vspace*{-7pt}
 \cvsect{PUBLICATIONS} 
 
 \begin{enumerate}[label={[\arabic*]}, noitemsep, topsep=0pt, parsep=2pt, partopsep=0pt, leftmargin=18pt]
@@ -170,7 +167,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	\item \textbf{Hrishikesh Belagali}, Thomas Van Camp, R. Pradeep, Sourin Das, Namit Anand, Ryan LaRose, ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits,'' \href{https://arxiv.org/abs/2607.21337}{\emph{arXiv:2607.21337 (2026)}}. \\Submitted to \emph{Physical Review Letters} (revised manuscript under review).
 	\item \textbf{Hrishikesh Belagali}, Nitin Kumar Singh, Josh V. Vermaas, ``The Nanoscale Impact of Cyclopropane Fatty Acids and Hopanoids on Alcohol Tolerance in \textit{Clostridium acetobutylicum} and \textit{Zymomonas mobilis},'' \href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15004463/v1}{ChemRxiv:15004463 (2026)}. Submitted to \emph{The Journal of Physical Chemistry B} (under revision).
 \end{enumerate}
-\newpage
+% \newpage
 \cvsect{CONFERENCES}
 \begin{entrylist}
 	\entry{2026 \\ \vspace{4pt}\color{gray} \textit{ACS, IL}}
@@ -189,7 +186,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{2026 \\ \vspace{4pt}\color{gray} \textit{MSU UURAF}}
 		{Reducing T Gate Counts via Gateset Rotation}
 		{}
-		{Poster presented at MSU Undergraduate Research and Arts Forum. \textbf{Awarded first place} in the Engineering, Computer Science and Mathematics division.}
+		{Poster presented at MSU Undergraduate Research and Arts Forum. \textbf{Awarded first place.}}
 	\entry 
 		{2025 \\ \vspace{4pt}\color{gray} \textit{ACS, D.C.}}
 		{Aquaporin Water Transit Modulation via Protein Capping}
@@ -202,18 +199,17 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{}
 		{Poster presented at First Great Lakes Plant Science Conference.}
 \end{entrylist}
-
+\vspace*{-7pt}
 \cvsect{Research Software \& Open Source}
 \begin{entrylist}
 	\entry{propaq \\ Python, Rust} 
 		{propaq}
 		{\href{https://github.com/hkbelagali/propaq}{github.com}/\href{https://pypi.org/project/propaq/}{pypi.org}}
-		{Creator and primary developer of \textit{propaq}, a Python package for Heisenberg propagation, designed for large-scale simulation on HPC clusters.
+		{Creator and primary developer of \textit{propaq}, a Heisenberg propagation library for quantum circuit simulation.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 			\item Implemented thread-safe kernels and compact representation of Pauli and Majorana strings in Rust for efficient multi-threaded simulation.
-			\item Developed a Python interface integrating \textit{propaq} with Qiskit and Cirq for seamless simulation workflows using PyO3 bindings.
-			\item Designed a plugin system for developing custom noise and truncation policies in Python, Rust, C, and Julia
-			to enable user customization with minimal overhead.
+			\item Developed PyO3-based Python bindings integrating \textit{propaq} with Qiskit and Cirq for seamless workflows.
+			\item Built a low-overhead plugin system for custom noise/truncation policies in Python, Rust, C, and Julia.
 		\end{itemize}
 		}
 	\entry{ffsim \\ Python, Rust}
@@ -221,7 +217,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 		{\href{https://github.com/qiskit-community/ffsim/releases/tag/v0.0.85}{github.com}}
 		{Contributed to \textit{ffsim}, a Python package for simulating fermionic quantum systems.
 		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-			\item Implemented fermionic backpropagation from ``Efficient classical simulation of large-scale unitary cluster Jastrow circuits'' (arXiv:2607.21337) into \textit{ffsim} for fast unitary cluster Jastrow ansatz simulation.
+			\item Implemented fermionic backpropagation (arXiv:2607.21337) in \textit{ffsim} for fast UCJ ansatz simulation.
 			\item Created a JAX-based implementation for GPU-accelerated variational optimization.
 		\end{itemize}
 		}
@@ -229,11 +225,7 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	{QuTiP \\ Python}
 	{Quantum Toolbox in Python (QuTiP)}
 	{\href{https://github.com/qutip/qutip}{github.com}}
-	{Contributed to QuTiP, an open-source library for simulating quantum systems.
-	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
-	\item Implemented functionality to return eigenkets as an operator in the Qobj class.
-	\end{itemize}
-	}
+	{Contributed to QuTiP: added support for returning eigenkets as a Qobj operator.}
 \entry
 	{aqua-blue \\ Python}
 	{aqua-blue}
@@ -249,12 +241,13 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	{tce-lib \\ Python}
 	{tce-lib}
 	{\href{https://github.com/MUEXLY/tce-lib}{github.com}}
-	{Contributed to tce-lib, a Python package for building tensorial cluster expansion models for concentrated alloys.
+	{Contributed to tce-lib, a Python package for tensorial cluster expansion models of concentrated alloys.
 	\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=7pt]
 	\item Implemented lazy evaluation of Monte Carlo trajectories for efficient simulation on HPC clusters.
 	\end{itemize}
 		}
 \end{entrylist}
+\vspace*{-7pt}
 \cvsect{HONORS AND AWARDS}
 \vspace{-10pt}
 \begin{itemize}
@@ -264,30 +257,31 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	\item Senator Joe and Mary Conroy Endowed Scholarship, College of Engineering (2024) -- \$2,000
 	\item MSU President's Scholarship (2024) -- \$30,000
 \end{itemize}
-\newpage
+% \newpage
 	\cvsect{Research Communication}
 	\begin{entrylist}
 		\entry{2026 \\ \vspace{4pt}\color{gray} \textit{MSU CoE, MI}}
 			{``Student View: Challenging the Quantum Advantage Boundary''}
 			{\href{https://engineering.msu.edu/news/student-view-challenging-quantum-advantage-boundary}{engineering.msu.edu}}
-			{Article highlighting my quantum computing research journey, published by the College of Engineering, Michigan State University.}
+			{Article on my quantum computing research journey, published by the MSU College of Engineering.}
 	\end{entrylist}
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
+% \newpage
+\vspace*{-7pt}
 \cvsect{Selected Projects}
 \begin{entrylist}
-	\entry 
-		{Python \\ Qiskit} 
-		{Hamiltonian Tensor Compression for Time Evolution on Quantum Computers}
-		{}
-		{Extended my work on the canonical polyadic decomposition for factorizing chemistry Hamiltonians as part of my Graduate Tensor Networks course taught by Prof. Ryan LaRose.}
+% 	\entry 
+% 		{Python \\ Qiskit} 
+% 		{Hamiltonian Tensor Compression for Time Evolution on Quantum Computers}
+% 		{}
+% 		{Extended my work on the canonical polyadic decomposition for factorizing chemistry Hamiltonians as part of my Graduate Tensor Networks course taught by Prof. Ryan LaRose.}
 	\entry
 		{Python \\ Qiskit}
 		{Adiabatic Quantum Computation}
 		{\href{https://github.com/hkbelagali/Adiabatic-Quantum-Computation}{github.com}}
-		{Implemented a quantum adiabatic algorithm to solve QUBO-type problems using the Trotter-Suzuki approximation and quantum Ising model formulation techniques. 
-		\\Extended this project in my Graduate Quantum Algorithms course to investigate the effects of hardware noise on accuracy and convergence.}
+		{Trotterized adiabatic algorithm for QUBO-type problems via Ising formulations; extended in my Graduate Quantum Algorithms course to study hardware-noise effects on convergence.}
 	% \entry 
 	% 	{Python \\ Qiskit}
 	% 	{Quantum Arithmetic Circuits}
@@ -313,11 +307,11 @@ $\mathbf{^\dagger}$\textbf{Graduate course}
 	% 	{foldopt}
 	% 	{\href{https://github.com/hkbelagali/foldopt}{github.com}}
 	% 	{Python package for model-agnostic protein structure optimization.}
-	\entry
-		{Python}
-		{Quadratic Unconstrained Binary Optimization}
-		{\href{https://github.com/hkbelagali/qubo}{github.com}}
-		{Stochastic tunneling-enhanced simulated annealing for solving QUBO-type problems.}
+% 	\entry
+% 		{Python}
+% 		{Quadratic Unconstrained Binary Optimization}
+% 		{\href{https://github.com/hkbelagali/qubo}{github.com}}
+% 		{Stochastic tunneling-enhanced simulated annealing for solving QUBO-type problems.}
 	% \entry
 	% 	{Python \\ PyTorch \\ pytest}
 	% 	{neurop}
